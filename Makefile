@@ -1,10 +1,10 @@
-all: run
+all: html
 
 build:
 	docker build . -t jarron-resume:latest
 
-run: build
-	docker run --rm -it -p 4000:4000 jarron-resume:latest
+serve: build
+	docker run --rm -it -v`pwd`:/src -p 4000:4000 jarron-resume:latest
 
 html: build
 	docker run --rm -it jarron-resume:latest export resume.html
