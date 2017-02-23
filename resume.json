@@ -2,12 +2,18 @@
   "basics": {
     "name": "Jie-Ren (Jarron) Shih",
     "label": "Programmer",
-    "picture": "",
+    "picture": "https://github.com/jarronshih/jarronshih.github.io/raw/master/DJ_512x512.png",
     "email": "jarronshih@gmail.com",
-    "phone": "",
+    "phone": "408-505-6800",
     "website": "",
     "summary": "",
-    "location": {},
+    "location": {
+      "address": "",
+      "postalCode": "CA 95117",
+      "city": "San Jose",
+      "countryCode": "US",
+      "region": "California"
+    },
     "profiles": []
   },
   "work": [
@@ -15,10 +21,21 @@
       "company": "Trend Micro",
       "position": "Senior Software Developer",
       "website": "https://www.trendmicro.com/",
-      "startDate": "2015-01-01",
-      "summary": "Description...",
+      "startDate": "2016-10-01",
+      "summary": "",
       "highlights": [
-        "Started the company"
+      ]
+    },
+    {
+      "company": "Trend Micro",
+      "position": "Senior Software Developer",
+      "website": "https://www.trendmicro.com/",
+      "startDate": "2015-01-01",
+      "endDate": "2016-10-01",
+      "summary": "In Cloud and Data Center Security Product team (Deep Security), responsible for SAP virus scan on Windows platform, including Anti-Malware, Javascript active script scan and Mail scan.",
+      "highlights": [
+        "Integrate Anti-Malware solution and active script scan solution to prevent Cross Site Scripting Attack (XSS).",
+        "Develop virus scan interface for SAP on Windows platform to meet the market demand."
       ]
     },
     {
@@ -27,22 +44,15 @@
       "website": "https://www.trendmicro.com/",
       "startDate": "2012-09-01",
       "endDate": "2014-12-31",
-      "summary": "Description...",
+      "summary": "In Cloud Storage Encryption Product Team (SecureCloud), responsible for development boot device encryption feature and Linux software agents on cloud service platform.",
       "highlights": [
-        "Started the company"
+        "Implement boot disk encryption feature to prevent boot data leakage on Windows and variant Linux distributions, including Ubunto, CentOS, RHEL, AmazonLinux and SUSE.",
+        "Implement software agent on major cloud service providers including Amazon EC2, Microsoft Azure and HP-Cloud",
+        "2013 Q2 Trend Engineer of Quarter"
       ]
     }
   ],
   "education": [
-    {
-      "institution": "National Taiwan University",
-      "area": "Electrical Engineering",
-      "studyType": "Master of Science",
-      "startDate": "2010-09-01",
-      "endDate": "2012-07-01",
-      "gpa": "4.0",
-      "courses": []
-    },
     {
       "institution": "National Taiwan University",
       "area": "Electrical Engineering",
@@ -51,23 +61,46 @@
       "endDate": "2010-07-01",
       "gpa": "3.73/4.00",
       "courses": []
-    }
-  ],
-  "awards": [
+    },
     {
-      "title": "Award",
-      "date": "2014-11-01",
-      "awarder": "Company",
-      "summary": "There is no spoon."
+      "institution": "National Taiwan University",
+      "area": "Electrical Engineering",
+      "studyType": "Master of Science",
+      "startDate": "2010-09-01",
+      "endDate": "2012-07-01",
+      "gpa": "4.0",
+      "courses": []
     }
   ],
+  "awards": [],
   "publications": [
     {
+      "name": "Root Volume Encryption Mechanism in Para-virtualized Virtual Machine",
+      "publisher": "Trend Micro",
+      "releaseDate": "2015-12-01",
+      "website": "http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=9202058.PN.&OS=PN/9202058&RS=PN/9202058",
+      "summary": "The present invention is generally related to provide data protection. More particularly, the present invention is directed to achieve root volume encryption in a para-virtualized virtual machine."
+    },
+    {
       "name": "Securing M2M with Post-quantum Public-key Cryptography",
-      "publisher": "Company",
+      "publisher": "Emerging and Selected Topics in Circuits and Systems / IEEE Journal",
+      "releaseDate": "2013-03-07",
+      "website": "http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6472114",
+      "summary": "We present an ASIC implementation of two post-quantum public-key cryptosystems (PKCs): NTRU-Encrypt and TTS. It represents a first step toward securing machine-to-machine (M2M) systems using strong, hardware-assisted PKC. In contrast to the conventional wisdom that PKC is too expensive for M2M sensors, it actually can lower the total cost of ownership because of cost savings in provision, deployment, operation, maintenance, and general management."
+    },
+    {
+      "name": "MIFARE Classic: Practical Attacks and Defenses",
+      "publisher": "Chinese Cryptology and Information Security Association",
       "releaseDate": "2013-05-27",
-      "website": "http://publication.com",
-      "summary": "Description..."
+      "website": "http://www.airitilibrary.com/Publication/alDetailedMesh?docid=c0000078-201005-201007130127-201007130127-126-132",
+      "summary": "MIFARE Classic is a proprietary contactless smart card technology widely used in public transportation ticketing systems of cities across the world. MIFARE Classic's cryptographic protection to the stored data has been reverse-engineered and broken in a recent series of papers. In this paper, we report our experience attacking a real MIFARE Classic system. Specifically, we have implemented a brute-force search using NVIDIA graphics cards to verify the claims in the literature. To our best knowledge, this is the first report in the literature of a practical long-range attack. These attacks disarm all cryptographic protection of MIFARE Classic, making it extremely difficult to secure transactions. Lastly, we take up the challenge and present our ideas how to defend against most attacks using practical mechanisms that do not require any hardware changes."
+    },
+    {
+      "name": "A practical experience with RFID security",
+      "publisher": "Mobile Data Management: Systems, Services and Middleware, 2009 / IEEE",
+      "releaseDate": "2009-05-18",
+      "website": "http://ieeexplore.ieee.org/document/5088976",
+      "summary": "Radio-frequency identification (RFID) technologies allow remote identification as well as generic data access using radio waves. We capture and analyze the communication between a legitimate reader and an EasyCard using GNURadio, an open-source software-defined radio running on PC. We will share our experiences with EasyCard security and hopefully provide some insights into RFID security in practice."
     }
   ],
   "skills": [
@@ -77,7 +110,32 @@
       "keywords": [
         "Python",
         "C/C++",
-        "Javascript"
+        "Javascript",
+        "Docker",
+        "CI/CD"
+      ]
+    },
+    {
+      "name": "Computer Network",
+      "level": "Master",
+      "keywords": [
+      ]
+    },
+    {
+      "name": "Linux System",
+      "level": "Master",
+      "keywords": [
+        "Boot Process Programming",
+        "Encryption Driver"
+      ]
+    },
+    {
+      "name": "Cloud Platform",
+      "level": "Master",
+      "keywords": [
+        "AWS",
+        "Docker Data Center",
+        "Azure"
       ]
     }
   ],
@@ -87,7 +145,7 @@
       "level": "Fluent"
     },
     {
-      "name": "English",
+      "name": "Chinese",
       "level": "Native"
     }
   ],
@@ -96,8 +154,9 @@
       "name": "Contract bridge",
       "keywords": [
         "card game",
-        "Unicorns"
+        "mind game"
       ]
     }
-  ]
+  ],
+  "references": []
 }

@@ -1,7 +1,7 @@
 FROM node:7.6
 
 RUN npm install -g resume-cli
-RUN npm install -g jsonresume-theme-onepage
+RUN npm install -g jsonresume-theme-onepage jsonresume-theme-kendall
 RUN mkdir /src
 WORKDIR /src
 
