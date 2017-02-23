@@ -8,7 +8,7 @@ serve: build
 
 html: build
 	docker run --rm -it -v`pwd`:/src jarron-resume:latest export resume.html -t onepage
-	mv resume.html docs/index.html
+	mv resume.html index.html
 
 pdf: build
 	docker run --rm -it -v`pwd`:/src jarron-resume:latest export resume.pdf
