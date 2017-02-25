@@ -6,7 +6,7 @@
     "email": "jarronshih@gmail.com",
     "phone": "408-505-6800",
     "website": "",
-    "summary": "",
+    "summary": "Security expert, network consultant, infrastructure builder and 4 years experience developer. Jie-Ren is experienced in developing secure enterprise software and building high scalable H/A product. Experience in all kind of virtual cloud platform, hypervisor and infrastructure. From AWS, Azure, vmware, docker to serverless.",
     "location": {
       "address": "",
       "postalCode": "CA 95117",
@@ -22,8 +22,11 @@
       "position": "Senior Software Developer",
       "website": "https://www.trendmicro.com/",
       "startDate": "2016-10-01",
-      "summary": "",
+      "summary": "Relocated to USA office. In network defense group, responsible for CI/CD, network traffice parseing and hosting an SaaS service.",
       "highlights": [
+        "Introduce CI/CD practice to the product, as the standard of the following project.",
+        "Enhance QoS to SaaS service, making different level customer sharing resource in cloud.",
+        "Parsing network traffic in packet level, work as data engineer in network analysis product."
       ]
     },
     {
@@ -68,8 +71,13 @@
       "studyType": "Master of Science",
       "startDate": "2010-09-01",
       "endDate": "2012-07-01",
-      "gpa": "4.0",
-      "courses": []
+      "gpa": "4.00/4.00",
+      "courses": [
+        "EE5157 Multi-core System and Software",
+        "CSIE5400 Artificial Intelligence",
+        "CSIE7210 Parallel and Distribution Computing",
+        "MATH5149 Foundation of Cryptography"
+      ]
     }
   ],
   "awards": [],
