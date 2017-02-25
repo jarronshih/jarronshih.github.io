@@ -6,7 +6,7 @@
     "email": "jarronshih@gmail.com",
     "phone": "408-505-6800",
     "website": "",
-    "summary": "Security expert, network consultant, infrastructure builder and 4 years experience developer. Jie-Ren is experienced in developing secure enterprise software and building high scalable H/A product. Experience in all kind of virtual cloud platform, hypervisor and infrastructure. From AWS, Azure, vmware, docker to serverless.",
+    "summary": "As a security expert, network consultant, infrastructure builder with 5 years experience developer, Jie-Ren is experienced in developing secure enterprise software and building high scalable H/A product. Jie-Ren is also experienced in all kind of virtual cloud platform, hypervisor and infrastructure from AWS, Azure, vmware, docker to serverless.",
     "location": {
       "address": "",
       "postalCode": "CA 95117",
@@ -35,7 +35,7 @@
       "website": "https://www.trendmicro.com/",
       "startDate": "2015-01-01",
       "endDate": "2016-10-01",
-      "summary": "In Cloud and Data Center Security Product team (Deep Security), responsible for SAP virus scan on Windows platform, including Anti-Malware, Javascript active script scan and Mail scan.",
+      "summary": "In Cloud and Data Center Security Product team (Deep Security), the most profitable products, responsible for SAP virus scan on Windows platform, including Anti-Malware, Javascript active script scan and Mail scan.",
       "highlights": [
         "Integrate Anti-Malware solution and active script scan solution to prevent Cross Site Scripting Attack (XSS).",
         "Develop virus scan interface for SAP on Windows platform to meet the market demand."
@@ -114,36 +114,33 @@
   "skills": [
     {
       "name": "Software Development",
-      "level": "Master",
+      "level": "",
       "keywords": [
         "Python",
         "C/C++",
         "Javascript",
         "Docker",
+        "Jenkins",
         "CI/CD"
       ]
     },
     {
-      "name": "Computer Network",
-      "level": "Master",
+      "name": "Cloud Platform",
+      "level": "",
       "keywords": [
+        "AWS",
+        "Docker Data Center",
+        "k8t",
+        "Azure"
       ]
     },
     {
       "name": "Linux System",
-      "level": "Master",
+      "level": "",
       "keywords": [
-        "Boot Process Programming",
-        "Encryption Driver"
-      ]
-    },
-    {
-      "name": "Cloud Platform",
-      "level": "Master",
-      "keywords": [
-        "AWS",
-        "Docker Data Center",
-        "Azure"
+        "Boot Process",
+        "Encryption Driver",
+        "Network programming"
       ]
     }
   ],
