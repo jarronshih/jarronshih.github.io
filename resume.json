@@ -4,9 +4,9 @@
     "label": "Programmer",
     "picture": "https://github.com/jarronshih/jarronshih.github.io/raw/master/DJ_512x512.png",
     "email": "jarronshih@gmail.com",
-    "phone": "408-505-6800",
+    "phone": "+1-408-505-6800",
     "website": "",
-    "summary": "As a 5 years experienced security expert, network consultant, infrastructure builder and developer, Jie-Ren is experienced in developing secure enterprise software and building high scalable H/A product. Jie-Ren is also experienced in all kind of virtual cloud platform, hypervisor and infrastructure from AWS, Azure, vmware, docker to serverless.",
+    "summary": "As a 5 years experienced security expert, network consultant, infrastructure builder and developer, Jie-Ren is experienced in developing secure enterprise software and building high scalable H/A product, while experienced in all kind of virtual cloud platform, hypervisor and infrastructure from AWS, Azure, vmware, docker to serverless.",
     "location": {
       "address": "",
       "postalCode": "CA 95117",
@@ -14,14 +14,35 @@
       "countryCode": "US",
       "region": "California"
     },
-    "profiles": []
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "jarronshih",
+        "url": "https://github.com/jarronshih"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "jarronshih",
+        "url": "https://www.linkedin.com/in/jarronshih"
+      }
+    ]
   },
   "work": [
     {
       "company": "Trend Micro",
+      "position": "Staff Software Developer",
+      "website": "https://www.trendmicro.com/",
+      "startDate": "2017-01-01",
+      "summary": "",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "Trend Micro",
       "position": "Senior Software Developer",
       "website": "https://www.trendmicro.com/",
-      "startDate": "2016-10-01",
+      "startDate": "2015-10-01",
+      "endDate": "2016-12-31",
       "summary": "Relocated to USA office. In network defense group, responsible for CI/CD, network traffic parsing and hosting an SaaS service.",
       "highlights": [
         "Introduce CI/CD practice to the product, as the standard of the following project.",
@@ -34,7 +55,7 @@
       "position": "Senior Software Developer",
       "website": "https://www.trendmicro.com/",
       "startDate": "2015-01-01",
-      "endDate": "2016-10-01",
+      "endDate": "2015-10-01",
       "summary": "In Cloud and Data Center Security Product team (Deep Security), the most profitable products, responsible for SAP virus scan on Windows platform, including Anti-Malware, Javascript active script scan and Mail scan.",
       "highlights": [
         "Integrate Anti-Malware solution and active script scan solution to prevent Cross Site Scripting Attack (XSS).",
@@ -146,12 +167,12 @@
   ],
   "languages": [
     {
-      "name": "English",
-      "level": "Fluent"
+      "language": "English",
+      "fluency": "Fluent"
     },
     {
-      "name": "Chinese",
-      "level": "Native"
+      "language": "Chinese",
+      "fluency": "Native"
     }
   ],
   "interests": [
@@ -163,5 +184,6 @@
       ]
     }
   ],
-  "references": []
+  "references": [],
+  "googleAnalytics": "UA-96382673-1"
 }
