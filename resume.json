@@ -75,12 +75,25 @@
         "Implement software agent on major cloud service providers including Amazon EC2, Microsoft Azure and HP-Cloud",
         "2013 Q2 Trend Engineer of Quarter"
       ]
+    },
+    {
+      "company": "Intel Corp.",
+      "position": "Research Assistant, Part-time",
+      "website": "https://www.intel.com/",
+      "startDate": "2011-01-01",
+      "endDate": "2012-06-30",
+      "summary": "An energy-efficient programmable cryptographic coprocessor based on elliptic-curve and post-quantum cryptography . As chief designer of hybrid model, build up high level hardware simulation and scalable ASIC analysis.",
+      "highlights": [
+        "Implement scalable ASIC with NTRU and TTS cryptography with 25% area reduction.",
+        "Determine the optimal degree of parallelism from software simulation"
+      ]
     }
   ],
   "education": [
     {
       "institution": "National Taiwan University",
       "area": "Electrical Engineering",
+      "website": "https://www.ntu.edu.tw/",
       "studyType": "Bachelor of Science",
       "startDate": "2006-09-01",
       "endDate": "2010-07-01",
@@ -91,6 +104,7 @@
     {
       "institution": "National Taiwan University",
       "area": "Electrical Engineering",
+      "website": "https://www.ntu.edu.tw/",
       "studyType": "Master of Science",
       "startDate": "2010-09-01",
       "endDate": "2012-07-01",
@@ -117,7 +131,7 @@
       "title": "Certified ScrumMaster",
       "issuer": "Scrum Alliance",
       "date": "2015-01",
-      "website": "csm_scrum.pdf",
+      "website": "https://github.com/jarronshih/jarronshih.github.io/raw/master/csm_scrum.pdf",
       "summary": ""
     }
   ],
