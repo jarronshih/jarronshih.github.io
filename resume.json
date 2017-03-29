@@ -35,6 +35,7 @@
       "startDate": "2017-01-01",
       "summary": "",
       "highlights": [
+        "Design and move services from company datacenter to Cloud provider."
       ]
     },
     {
@@ -56,7 +57,7 @@
       "website": "https://www.trendmicro.com/",
       "startDate": "2015-01-01",
       "endDate": "2015-10-01",
-      "summary": "In Cloud and Data Center Security Product team (Deep Security), the most profitable products, responsible for SAP virus scan on Windows platform, including Anti-Malware, Javascript active script scan and Mail scan.",
+      "summary": "In Cloud and Data Center Security Product team, the most profitable products, responsible for SAP virus scan on Windows platform, including Anti-Malware, Javascript active script scan and Mail scan.",
       "highlights": [
         "Integrate Anti-Malware solution and active script scan solution to prevent Cross Site Scripting Attack (XSS).",
         "Develop virus scan interface for SAP on Windows platform to meet the market demand."
@@ -68,7 +69,7 @@
       "website": "https://www.trendmicro.com/",
       "startDate": "2012-09-01",
       "endDate": "2014-12-31",
-      "summary": "In Cloud Storage Encryption Product Team (SecureCloud), responsible for development boot device encryption feature and Linux software agents on cloud service platform.",
+      "summary": "In Cloud Storage Encryption Product Team, responsible for development boot device encryption feature and Linux software agents on cloud service platform.",
       "highlights": [
         "Implement boot disk encryption feature to prevent boot data leakage on Windows and variant Linux distributions, including Ubunto, CentOS, RHEL, AmazonLinux and SUSE.",
         "Implement software agent on major cloud service providers including Amazon EC2, Microsoft Azure and HP-Cloud",
@@ -84,6 +85,7 @@
       "startDate": "2006-09-01",
       "endDate": "2010-07-01",
       "gpa": "3.73/4.00",
+      "summary": "Earn First Prize in 2010 NTUEE Undergraduate Outstanding Project, Practical Attack on MIFARE Classic.",
       "courses": []
     },
     {
@@ -93,6 +95,7 @@
       "startDate": "2010-09-01",
       "endDate": "2012-07-01",
       "gpa": "4.00/4.00",
+      "summary": "Thesis: An efficient ASIC implementation of Lattice-based and Multivariate Post-Quantum Cryptography",
       "courses": [
         "EE5157 Multi-core System and Software",
         "CSIE5400 Artificial Intelligence",
@@ -101,10 +104,26 @@
       ]
     }
   ],
-  "awards": [],
+  "awards": [
+    {
+      "title": "2013 Q2 Engineer of Quarter",
+      "date": "2013-06-01",
+      "awarder": "Trend Micro",
+      "summary": ""
+    }
+  ],
+  "certificates": [
+    {
+      "title": "Certified ScrumMaster",
+      "issuer": "Scrum Alliance",
+      "date": "2015-01",
+      "website": "csm_scrum.pdf",
+      "summary": ""
+    }
+  ],
   "publications": [
     {
-      "name": "Root Volume Encryption Mechanism in Para-virtualized Virtual Machine",
+      "name": "[Patent] Root Volume Encryption Mechanism in Para-virtualized Virtual Machine",
       "publisher": "Trend Micro",
       "releaseDate": "2015-12-01",
       "website": "http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=9202058.PN.&OS=PN/9202058&RS=PN/9202058",
@@ -122,14 +141,14 @@
       "publisher": "Chinese Cryptology and Information Security Association",
       "releaseDate": "2013-05-27",
       "website": "http://www.airitilibrary.com/Publication/alDetailedMesh?docid=c0000078-201005-201007130127-201007130127-126-132",
-      "summary": "MIFARE Classic is a proprietary contactless smart card technology widely used in public transportation ticketing systems of cities across the world. MIFARE Classic's cryptographic protection to the stored data has been reverse-engineered and broken in a recent series of papers. In this paper, we report our experience attacking a real MIFARE Classic system. Specifically, we have implemented a brute-force search using NVIDIA graphics cards to verify the claims in the literature. To our best knowledge, this is the first report in the literature of a practical long-range attack. These attacks disarm all cryptographic protection of MIFARE Classic, making it extremely difficult to secure transactions. Lastly, we take up the challenge and present our ideas how to defend against most attacks using practical mechanisms that do not require any hardware changes."
+      "summary": "We report our experience attacking a real MIFARE Classic system. Specifically, we have implemented a brute-force search using NVIDIA graphics cards to verify the claims in the literature. To our best knowledge, this is the first report in the literature of a practical long-range attack. These attacks disarm all cryptographic protection of MIFARE Classic, making it extremely difficult to secure transactions. Lastly, we take up the challenge and present our ideas how to defend against most attacks using practical mechanisms that do not require any hardware changes."
     },
     {
       "name": "A practical experience with RFID security",
       "publisher": "Mobile Data Management: Systems, Services and Middleware, 2009 / IEEE",
       "releaseDate": "2009-05-18",
       "website": "http://ieeexplore.ieee.org/document/5088976",
-      "summary": "Radio-frequency identification (RFID) technologies allow remote identification as well as generic data access using radio waves. We capture and analyze the communication between a legitimate reader and an EasyCard using GNURadio, an open-source software-defined radio running on PC. We will share our experiences with EasyCard security and hopefully provide some insights into RFID security in practice."
+      "summary": "We capture and analyze the communication between a legitimate reader and an EasyCard using GNURadio, an open-source software-defined radio running on PC. We will share our experiences with EasyCard security and provide some insights into RFID security in practice."
     }
   ],
   "skills": [
@@ -139,20 +158,28 @@
       "keywords": [
         "Python",
         "C/C++",
-        "Javascript",
+        "Javascript"
+      ]
+    },
+    {
+      "name": "CI/CD",
+      "level": "",
+      "keywords": [
         "Docker",
         "Jenkins",
         "CI/CD"
       ]
     },
     {
-      "name": "Cloud Platform",
+      "name": "Cloud Skills",
       "level": "",
       "keywords": [
         "AWS",
+        "Azure",
+        "Scalable Sytem design",
         "Docker Data Center",
         "k8t",
-        "Azure"
+        "elasticsearch"
       ]
     },
     {
