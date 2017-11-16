@@ -6,7 +6,7 @@
     "email": "jarronshih@gmail.com",
     "phone": "+1-408-505-6800",
     "website": "",
-    "summary": "As a 5 years experienced security expert, network consultant, infrastructure builder and developer, Jie-Ren is experienced in developing secure enterprise software and building high scalable H/A product, while experienced in all kind of virtual cloud platform, hypervisor and infrastructure from AWS, Azure, vmware, docker to serverless.",
+    "summary": "As a 5 years experienced security expert, network consultant, infrastructure builder and developer, Jie-Ren is experienced in developing secure enterprise software and building high scalability H/A product, while experienced in all kind of virtual cloud platform, hypervisor and infrastructure from AWS, Azure, vmware, docker to serverless architecture. Jie-Ren is also familiar with Agile and DevOps process, with experience of hosting container-based web service on AWS.",
     "location": {
       "address": "",
       "postalCode": "CA 95117",
@@ -33,9 +33,12 @@
       "position": "Staff Software Developer",
       "website": "https://www.trendmicro.com/",
       "startDate": "2017-01-01",
-      "summary": "",
+      "summary": "Design and implement SaaS service running in cloud platform with container orchestration. Targeting for automatically CI/CD and high test coverage.",
       "highlights": [
-        "Design and move services from company datacenter to Cloud provider."
+        "Design, develop and operate container-based services from company data center to Cloud provider for SaaS.",
+        "Enhance the unit code coverage of legacy code to fit the modern DevOps process from scratch.",
+        "Separate data streaming part from monolithic application to embrace serviceless framework.",
+        "Introduce asynchronous on Python to enhance process and I/O usage."
       ]
     },
     {
@@ -47,7 +50,7 @@
       "summary": "Relocated to USA office. In network defense group, responsible for CI/CD, network traffic parsing and hosting an SaaS service.",
       "highlights": [
         "Introduce CI/CD practice to the product, as the standard of the following project.",
-        "Enhance QoS to SaaS service, making different level customer sharing resource in cloud.",
+        "Enhance QoS to SaaS service to support multi-tenancy customers sharing resource in the cloud.",
         "Parsing network traffic in packet level, work as data engineer in network analysis product."
       ]
     },
@@ -57,7 +60,7 @@
       "website": "https://www.trendmicro.com/",
       "startDate": "2015-01-01",
       "endDate": "2015-10-01",
-      "summary": "In Cloud and Data Center Security Product team, the most profitable products, responsible for SAP virus scan on Windows platform, including Anti-Malware, Javascript active script scan and Mail scan.",
+      "summary": "In Cloud and Data Center Security Product team, the most profitable products, responsible for SAP virus scan on Windows platform, including Anti-Malware, JavaScript active script scan and Mail scan.",
       "highlights": [
         "Integrate Anti-Malware solution and active script scan solution to prevent Cross Site Scripting Attack (XSS).",
         "Develop virus scan interface for SAP on Windows platform to meet the market demand."
@@ -171,15 +174,18 @@
       "level": "",
       "keywords": [
         "Python",
+        "Javascript",
         "C/C++",
-        "Javascript"
+        "html/css"
       ]
     },
     {
-      "name": "CI/CD",
+      "name": "DevOps",
       "level": "",
       "keywords": [
         "Docker",
+        "k8t",
+        "docker swarm",
         "Jenkins",
         "CI/CD"
       ]
@@ -189,11 +195,10 @@
       "level": "",
       "keywords": [
         "AWS",
-        "Azure",
-        "Scalable Sytem design",
-        "Docker Data Center",
         "k8t",
-        "elasticsearch"
+        "elasticsearch",
+        "Scalable Sytem design",
+        "Docker Data Center"
       ]
     },
     {
