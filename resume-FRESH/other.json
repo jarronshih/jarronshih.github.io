@@ -7,8 +7,7 @@
     {
       "name": "Contract bridge",
       "keywords": [
-        "card game",
-        "mind game"
+        "National Youth Team"
       ]
     },
     {
@@ -18,7 +17,7 @@
   "skills": {
     "sets": [
       {
-        "name": "Software Development",
+        "name": "Programing",
         "level": "advanced",
         "skills": [
           "Python",
@@ -32,7 +31,7 @@
         "level": "advanced",
         "skills": [
           "Docker",
-          "k8t",
+          "kubernetes",
           "docker swarm",
           "Jenkins",
           "CI/CD"
@@ -43,10 +42,9 @@
         "level": "advanced",
         "skills": [
           "AWS",
-          "k8t",
-          "elasticsearch",
-          "Scalable Sytem design",
-          "SaaS Sytem design"
+          "kubernetes",
+          "SaaS Sytem design",
+          "Scalable Sytem design"
         ]
       },
       {
@@ -70,31 +68,41 @@
     },
     {
       "title": "MIFARE Classic: Practical Attacks and Defenses",
-      "publisher": "Chinese Cryptology and Information Security Association",
+      "publisher": {
+        "name": "Chinese Cryptology and Information Security Association"
+      },
       "url": "http://www.airitilibrary.com/Publication/alDetailedMesh?docid=c0000078-201005-201007130127-201007130127-126-132",
       "date": "2013-05-27",
-      "summary": "We report our experience attacking a real MIFARE Classic system. Specifically, we have implemented a brute-force search using NVIDIA graphics cards to verify the claims in the literature. To our best knowledge, this is the first report in the literature of a practical long-range attack. These attacks disarm all cryptographic protection of MIFARE Classic, making it extremely difficult to secure transactions. Lastly, we take up the challenge and present our ideas how to defend against most attacks using practical mechanisms that do not require any hardware changes."
+      "summary": "This paper report a experience attacking a real MIFARE Classic system. We implement a brute-force search using NVIDIA graphics cards to verify the claims in the literature. This is the first report in the literature of a practical long-range attack and these attacks disarm all cryptographic protection of MIFARE Classic. Lastly, we take up the challenge and present our ideas how to defend against most attacks using practical mechanisms that do not require any hardware changes."
     },
     {
       "title": "Securing M2M with Post-quantum Public-key Cryptography",
-      "publisher": "Emerging and Selected Topics in Circuits and Systems / IEEE Journal",
+      "publisher": {
+        "name": "Emerging and Selected Topics in Circuits and Systems / IEEE Journal",
+        "url": "http://ieeexplore.ieee.org"
+      },
       "url": "http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6472114",
       "date": "2013-03-07",
-      "summary": "We present an ASIC implementation of two post-quantum public-key cryptosystems (PKCs): NTRU-Encrypt and TTS. It represents a first step toward securing machine-to-machine (M2M) systems using strong, hardware-assisted PKC. In contrast to the conventional wisdom that PKC is too expensive for M2M sensors, it actually can lower the total cost of ownership because of cost savings in provision, deployment, operation, maintenance, and general management."
+      "summary": "This paper presents an ASIC implementation of two post-quantum public-key cryptosystems: NTRU-Encrypt and TTS. It represents a first step toward securing machine-to-machine systems using strong, hardware-assisted PKC. In contrast to the conventional wisdom that PKC is too expensive for M2M sensors, it lowers the total cost of ownership based on cost savings in provision, deployment, operation, maintenance, and general management."
     },
     {
       "title": "A practical experience with RFID security",
-      "publisher": "Mobile Data Management: Systems, Services and Middleware, 2009 / IEEE",
+      "publisher": {
+        "name": "Mobile Data Management: Systems, Services and Middleware, 2009 / IEEE",
+        "url": "http://ieeexplore.ieee.org"
+      },
       "url": "http://ieeexplore.ieee.org/document/5088976",
       "date": "2009-05-18",
-      "summary": "We capture and analyze the communication between a legitimate reader and an EasyCard using GNURadio, an open-source software-defined radio running on PC. We will share our experiences with EasyCard security and provide some insights into RFID security in practice."
+      "summary": "This paper shares the practical experiences with EasyCard security and provide insights into RFID security."
     }
   ],
   "recognition": [
     {
-      "title": "2013 Q2 Engineer of Quarter",
-      "date": "2013-06-01",
+      "flavor": "industry",
       "from": "Trend Micro",
+      "title": "Engineer of Quarter",
+      "date": "2013-06-01",
+      "event": "2013 Q2",
       "summary": ""
     }
   ]
