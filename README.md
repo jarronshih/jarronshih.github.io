@@ -1,14 +1,14 @@
 # Jarron's Resume
-This is a resume generated from https://jsonresume.org/themes/. 
+This is a resume generated from https://github.com/hacksalot/HackMyResume
 
-The theme is a fork from https://github.com/reverbc/resume.json
 
 ## Build
 ```bash
 # Run local serve
-make serve
-make clean
+make build
+make dev
 
 # Create static file
+make pdf
 make html
 ```
