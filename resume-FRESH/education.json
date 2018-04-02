@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "format": "FRESH@^1.0.0-beta",
+    "modified": "2018-04-02T05:52:16.562Z"
+  },
+  "education": {
+    "summary": "",
+    "level": "degree",
+    "degree": "MSCS",
+    "history": [
+      {
+        "institution": "National Taiwan University",
+        "start": "2010-09-01",
+        "end": "2012-07-01",
+        "grade": "4.00/4.00",
+        "curriculum": [
+          "EE5157 Multi-core System and Software",
+          "CSIE5400 Artificial Intelligence",
+          "CSIE7210 Parallel and Distribution Computing",
+          "MATH5149 Foundation of Cryptography"
+        ],
+        "url": "https://www.ntu.edu.tw/",
+        "summary": "Thesis: An efficient ASIC implementation of Lattice-based and Multivariate Post-Quantum Cryptography",
+        "area": "Electrical Engineering",
+        "studyType": "Master of Science"
+      },
+      {
+        "institution": "National Taiwan University",
+        "start": "2006-09-01",
+        "end": "2010-07-01",
+        "grade": "3.73/4.00",
+        "curriculum": [],
+        "url": "https://www.ntu.edu.tw/",
+        "summary": "Earn First Prize in 2010 NTUEE Undergraduate Outstanding Project, Practical Attack on MIFARE Classic.",
+        "area": "Electrical Engineering",
+        "studyType": "Bachelor of Science"
+      }
+    ]
+  }
+}
