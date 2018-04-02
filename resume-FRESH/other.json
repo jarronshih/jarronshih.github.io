@@ -3,57 +3,45 @@
     "format": "FRESH@^1.0.0-beta",
     "modified": "2018-04-02T05:52:16.562Z"
   },
-  "interests": [
-    {
-      "name": "Contract bridge",
-      "keywords": [
-        "National Youth Team"
-      ]
-    },
-    {
-      "name": "Board Game"
-    }
-  ],
   "skills": {
     "sets": [
       {
         "name": "Programing",
         "level": "advanced",
         "skills": [
-          "Python",
-          "Javascript",
-          "C/C++",
-          "html/css"
+          "Python,",
+          "Javascript,",
+          "C/C++,",
+          "HTML/CSS,"
         ]
       },
       {
         "name": "DevOps",
         "level": "advanced",
         "skills": [
-          "Docker",
-          "kubernetes",
-          "docker swarm",
-          "Jenkins",
-          "CI/CD"
+          "Docker,",
+          "Kubernetes,",
+          "Jenkins,",
+          "CI/CD,"
         ]
       },
       {
         "name": "Cloud Skills",
         "level": "advanced",
         "skills": [
-          "AWS",
-          "kubernetes",
-          "SaaS Sytem design",
-          "Scalable Sytem design"
+          "AWS,",
+          "kubernetes,",
+          "SaaS sytem design,",
+          "Scalable sytem design,"
         ]
       },
       {
         "name": "Linux System",
         "level": "advanced",
         "skills": [
-          "Boot Process",
-          "Encryption Driver",
-          "Network programming"
+          "Boot process,",
+          "Encryption driver,",
+          "Network programming,"
         ]
       }
     ]
@@ -100,10 +88,21 @@
     {
       "flavor": "industry",
       "from": "Trend Micro",
-      "title": "Engineer of Quarter",
+      "title": "2013 Q2 Engineer of Quarter",
       "date": "2013-06-01",
       "event": "2013 Q2",
       "summary": ""
+    }
+  ],
+  "interests": [
+    {
+      "name": "Contract Bridge",
+      "keywords": [
+        "National Youth Team"
+      ]
+    },
+    {
+      "name": "Board Game"
     }
   ]
 }
