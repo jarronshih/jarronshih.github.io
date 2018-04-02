@@ -1,5 +1,5 @@
 # Jarron's Resume
-This is a resume generated from https://github.com/hacksalot/HackMyResume
+This is a resume generated from [HackMyResume](https://github.com/hacksalot/HackMyResume)
 
 
 ## Build
@@ -12,3 +12,7 @@ make dev
 make pdf
 make html
 ```
+
+## Ref
+- http://get.ftqq.com/744.get
+  - https://github.com/geekcompany/ResumeSample
