@@ -14,10 +14,9 @@
         "end": "2012-07-01",
         "grade": "4.00/4.00",
         "curriculum": [
-          "EE5157 Multi-core System and Software,",
-          "CSIE5400 Artificial Intelligence,",
-          "CSIE7210 Parallel and Distribution Computing,",
-          "MATH5149 Foundation of Cryptography,"
+          "Foundation of Cryptography,",
+          "Artificial Intelligence,",
+          "Parallel and Distribution Computing,"
         ],
         "url": "https://www.ntu.edu.tw/",
         "summary": "",

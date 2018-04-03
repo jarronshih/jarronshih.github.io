@@ -16,15 +16,15 @@
         "keywords": [],
         "highlights": [
           "Design, develop and operate container-based services from company data center to Cloud provider for SaaS.",
-          "Enhance the unit code coverage of legacy code to fit the modern DevOps process from scratch.",
           "Separate data streaming part from monolithic application to embrace serviceless framework.",
-          "Introduce asynchronous on Python to enhance process and I/O usage."
+          "Introduce asynchronous on Python to enhance process and I/O usage.",
+          "Legacy code refactoring: Python 2 to 3, unittest from scratch (0% to over 90%)."
         ]
       },
       {
         "position": "Senior Software Developer",
         "employer": "Trend Micro",
-        "summary": "Relocated to USA office. In network defense group, responsible for CI/CD, network traffic parsing and hosting an SaaS service.",
+        "summary": "In network defense group, responsible for CI/CD, network traffic parsing and hosting a Sandbox SaaS service.",
         "start": "2015-10-01",
         "end": "2016-12-31",
         "url": "https://www.trendmicro.com/",
@@ -44,7 +44,7 @@
         "url": "https://www.trendmicro.com/",
         "keywords": [],
         "highlights": [
-          "Integrate Anti-Malware solution and active script scan solution to prevent Cross Site Scripting Attack (XSS).",
+          "Integrate Anti-Malware solution and active script scan solution to prevent Cross Site Scripting Attack.",
           "Develop virus scan interface for SAP on Windows platform to meet the market demand."
         ]
       },
@@ -64,8 +64,8 @@
       },
       {
         "position": "Research Assistant, Part-time",
-        "employer": "Intel Corp.",
-        "summary": "An energy-efficient programmable cryptographic coprocessor based on elliptic-curve and post-quantum cryptography . As chief designer of hybrid model, build up high level hardware simulation and scalable ASIC analysis.",
+        "employer": "NTU and Intel Corp",
+        "summary": "As chief designer of hybrid model, we build up high level hardware simulation and scalable ASIC analysis.",
         "start": "2011-01-01",
         "end": "2012-06-30",
         "url": "https://www.intel.com/",

@@ -10,9 +10,9 @@ pdf:
 	hackmyresume build \
 		resume-FRESH/*.json \
 		resume-FRESH/options/writing.min.json \
-		to out/resume.pdf -t compact
+		to out/resume.pdf --theme compact
 	# cp out/resume.pdf one-page/resume-`date -I`.pdf
 
 html:
-	hackmyresume build resume-FRESH/*.json to out/resume.html -t positive
+	hackmyresume build resume-FRESH/*.json to out/resume.html --theme positive
 	cp out/resume.html index.html

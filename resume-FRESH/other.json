@@ -20,9 +20,10 @@
         "level": "advanced",
         "skills": [
           "Docker,",
-          "Kubernetes,",
           "Jenkins,",
-          "CI/CD,"
+          "CI/CD,",
+          "Monitor/Alert,",
+          "Unittest,"
         ]
       },
       {
@@ -30,7 +31,8 @@
         "level": "advanced",
         "skills": [
           "AWS,",
-          "kubernetes,",
+          "Kubernetes,",
+          "Docker Swarm,",
           "SaaS sytem design,",
           "Scalable sytem design,"
         ]
