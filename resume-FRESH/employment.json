@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "format": "FRESH@^1.0.0-beta",
+    "modified": "2018-04-02T05:52:16.562Z"
+  },
+  "employment": {
+    "summary": "",
+    "history": [
+      {
+        "position": "Staff Software Developer",
+        "employer": "Trend Micro",
+        "summary": "<br>Design and implement SaaS service running in cloud platform with container orchestration. Targeting for automatically CI/CD and high test coverage.",
+        "current": true,
+        "start": "2017-01-01",
+        "url": "https://www.trendmicro.com/",
+        "keywords": [],
+        "highlights": [
+          "Design, develop and operate _container-based services_ from company data center to AWS for SaaS.",
+          "Introduce _asynchronous_ on Python to enhance process and I/O usage with 60% improvement.",
+          "_Legacy code remodeled_: Python 2 to 3, built up unittest and integration test from scratch (0% to over 90%).",
+          "Separate data streaming part from monolithic application to embrace _serviceless framework_."
+        ]
+      },
+      {
+        "position": "Senior Software Developer",
+        "employer": "Trend Micro",
+        "summary": "<br>In network defense group, responsible for CI/CD, network traffic parsing and hosting a Sandbox SaaS service.",
+        "start": "2015-10-01",
+        "end": "2016-12-31",
+        "url": "https://www.trendmicro.com/",
+        "keywords": [],
+        "highlights": [
+          "Introduce _CI/CD_ best practice to the product, as the standard of the following project.",
+          "Enhance SaaS service to support multi-tenancy customers sharing resource in the cloud.",
+          "Parsing network traffic in packet level, work as _data engineer_ in network analysis product."
+        ]
+      },
+      {
+        "position": "Senior Software Developer",
+        "employer": "Trend Micro",
+        "summary": "<br>In Cloud and Data Center Security Product team, the most profitable products, responsible for SAP virus scan on Windows platform, including Anti-Malware, JavaScript active script scan and Mail scan.",
+        "start": "2015-01-01",
+        "end": "2015-10-01",
+        "url": "https://www.trendmicro.com/",
+        "keywords": [],
+        "highlights": [
+          "Integrate Anti-Malware solution and active script scan solution to prevent _Cross Site Scripting Attack_.",
+          "Develop virus scan interface for SAP on Windows platform to meet the market demand."
+        ]
+      },
+      {
+        "position": "Software Developer",
+        "employer": "Trend Micro",
+        "summary": "<br>In Cloud Storage Encryption Product Team, responsible for development boot device encryption feature and Linux software agents on cloud service platform.",
+        "start": "2012-09-01",
+        "end": "2014-12-31",
+        "url": "https://www.trendmicro.com/",
+        "keywords": [],
+        "highlights": [
+          "Implement boot disk encryption feature to prevent boot data leakage on Windows and variant Linux distributions, including Ubunto, CentOS, RHEL, AmazonLinux and SUSE.",
+          "Design software on major cloud service providers including Amazon EC2, Microsoft Azure and HP-Cloud.",
+          "2013 Q2 Trend Engineer of Quarter."
+        ]
+      },
+      {
+        "position": "Research Assistant, Part-time",
+        "employer": "NTU and Intel Corp",
+        "summary": "<br>As chief designer of building hybrid model and build up high level hardware simulation and scalable ASIC analysis.",
+        "start": "2011-01-01",
+        "end": "2012-06-30",
+        "url": "https://www.intel.com/",
+        "keywords": [],
+        "highlights": [
+          "Implement scalable ASIC with NTRU and TTS cryptography with 25% area reduction.",
+          "Determine the optimal degree of parallelism from software simulation."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "format": "FRESH@^1.0.0-beta",
+    "modified": "2018-04-02T05:52:16.562Z"
+  },
+  "skills": {
+    "sets": [
+      {
+        "name": "Programing",
+        "level": "advanced",
+        "skills": [
+          "Python,",
+          "Javascript,",
+          "C/C++,",
+          "HTML/CSS,"
+        ]
+      },
+      {
+        "name": "DevOps",
+        "level": "advanced",
+        "skills": [
+          "Docker,",
+          "Jenkins,",
+          "CI/CD,",
+          "Monitor/Alert,",
+          "Unittest,"
+        ]
+      },
+      {
+        "name": "Cloud Skills",
+        "level": "advanced",
+        "skills": [
+          "AWS,",
+          "Kubernetes,",
+          "Docker Swarm,",
+          "SaaS sytem design,",
+          "Scalable sytem design,"
+        ]
+      },
+      {
+        "name": "Linux System",
+        "level": "advanced",
+        "skills": [
+          "Boot process,",
+          "Encryption driver,",
+          "Network programming,"
+        ]
+      }
+    ]
+  },
+  "writing": [
+    {
+      "title": "[Patent] Root Volume Encryption Mechanism in Para-virtualized Virtual Machine",
+      "publisher": "Trend Micro",
+      "url": "http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=9202058.PN.&OS=PN/9202058&RS=PN/9202058",
+      "date": "2015-12-01",
+      "summary": "The present invention is generally related to provide data protection. More particularly, the present invention is directed to achieve root volume encryption in a para-virtualized virtual machine."
+    },
+    {
+      "title": "MIFARE Classic: Practical Attacks and Defenses",
+      "publisher": {
+        "name": "Chinese Cryptology and Information Security Association"
+      },
+      "url": "http://www.airitilibrary.com/Publication/alDetailedMesh?docid=c0000078-201005-201007130127-201007130127-126-132",
+      "date": "2013-05-27",
+      "summary": "This paper report a experience attacking a real MIFARE Classic system. We implement a brute-force search using NVIDIA graphics cards to verify the claims in the literature. This is the first report in the literature of a practical long-range attack and these attacks disarm all cryptographic protection of MIFARE Classic. Lastly, we take up the challenge and present our ideas how to defend against most attacks using practical mechanisms that do not require any hardware changes."
+    },
+    {
+      "title": "Securing M2M with Post-quantum Public-key Cryptography",
+      "publisher": {
+        "name": "Emerging and Selected Topics in Circuits and Systems / IEEE Journal",
+        "url": "http://ieeexplore.ieee.org"
+      },
+      "url": "http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6472114",
+      "date": "2013-03-07",
+      "summary": "This paper presents an ASIC implementation of two post-quantum public-key cryptosystems: NTRU-Encrypt and TTS. It represents a first step toward securing machine-to-machine systems using strong, hardware-assisted PKC. In contrast to the conventional wisdom that PKC is too expensive for M2M sensors, it lowers the total cost of ownership based on cost savings in provision, deployment, operation, maintenance, and general management."
+    },
+    {
+      "title": "A practical experience with RFID security",
+      "publisher": {
+        "name": "Mobile Data Management: Systems, Services and Middleware, 2009 / IEEE",
+        "url": "http://ieeexplore.ieee.org"
+      },
+      "url": "http://ieeexplore.ieee.org/document/5088976",
+      "date": "2009-05-18",
+      "summary": "This paper shares the practical experiences with EasyCard security and provide insights into RFID security."
+    }
+  ],
+  "recognition": [
+    {
+      "flavor": "industry",
+      "from": "Trend Micro",
+      "title": "2013 Q2 Engineer of Quarter",
+      "date": "2013-06-01",
+      "event": "2013 Q2",
+      "summary": ""
+    },
+    {
+      "title": "Certified ScrumMaster",
+      "from": "Scrum Alliance",
+      "date": "2015-01",
+      "website": "https://github.com/jarronshih/jarronshih.github.io/raw/master/assets/csm_scrum.pdf",
+      "summary": ""
+    }
+  ],
+  "interests": [
+    {
+      "name": "Contract Bridge",
+      "keywords": [
+        "National Youth Team"
+      ]
+    },
+    {
+      "name": "Board Game"
+    }
+  ]
+}
