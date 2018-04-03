@@ -1,1034 +1,462 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Jie-Ren (Jarron) Shih</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/><style>@font-face {
-  font-family: 'icomoon';
-  src:  url('//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.eot?9yug7q');
-  src:  url('//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.eot?9yug7q#iefix') format('embedded-opentype'),
-    url('//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.ttf?9yug7q') format('truetype'),
-    url('//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.woff?9yug7q') format('woff'),
-    url('//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.svg?9yug7q#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Jie-Ren (Jarron) Shih</title>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic'
+        rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <style>
+            html, body, main, section, header, ul, p, h1, h2, h3 {
+              font-family: 'Open Sans', 'sans-serif';
+              font-size: 14px;
+              line-height: 1.4;
+              margin: 0; padding: 0;
+              display: block;
+            }
+            
+            ::selection {
+              color: #fff;
+              background: #e48a8a; /* WebKit/Blink Browsers */
+            }
+            ::-moz-selection {
+              color: #fff;
+              background: #e48a8a; /* Gecko Browsers */
+            }
+            
+            p::selection {
+              color: #fff;
+            }
+            
+            a {
+              color: #C00000;
+              text-decoration: none;
+            }
+            
+            a:visited {
+              color: #7B0796;
+            }
+            
+            a:hover {
+              text-decoration: underline;
+            }
+            
+            h1 {
+              text-transform: uppercase;
+              font-size:
+            }
+            
+            h2 {
+              text-transform: uppercase;
+              color: #898989;
+              font-size: 2em;
+              position: relative;
+              font-weight: 400;
+            }
+            
+            h3, .tenure {
+              font-size: 1.5em;
+              font-weight: 400;
+            }
+            
+            h3 {
+              margin-top: 0;
+              margin-bottom: 5px;
+              /*width: 85%;*/
+              float: left;
+            }
+            
+            table {
+              width: 100%;
+              text-transform: uppercase;
+            }
+            
+            td:first-child {
+              letter-spacing: 2px;
+              color: #bd5b5b;
+              font-size: 20px;
+            }
+            
+            td:last-child {
+              text-align: justify; /* HTML justification sucks, but in this case... */
+            }
+            
+            hr {
+              display: none;
+            }
+            
+            main {
+              padding: 15px;
+              max-width: 800px;
+              margin: 0 auto;
+            }
+            
+            section {
+              margin-top: 2em;
+            }
+            
+            section > div {
+              margin-top: 2em;
+              overflow: hidden; /* Clear floated children */
+            }
+            
+            section > div p {
+              clear: both;
+            }
+            
+            section > header {
+              position: relative;
+            }
+            
+            p + ul {
+              margin: 1em;
+            }
+            
+            ul {
+              clear: both;
+            }
+            
+            li {
+              margin-left: 2em;
+            }
+            
+            p, li {
+              text-align: justify;
+            }
+            
+            .tenure {
+              float: right;
+              color: #6F6F6F;
+              background-color: #F5F5F5;
+              border-radius: 6px;
+              padding: 4px 6px;
+              font-size: 85%;
+              font-weight: 600;
+              margin-top: 3px;
+            }
+            
+            .location {
+              border: #e2aaaa dashed 1px;
+              background-color: #ffffff;
+              padding: 3px 6px;
+              border-radius: 6px;
+              float: right;
+              margin-right: 5px;
+              float: right;
+              font-size: 85%;
+              color: #717171;
+              font-weight: 600;
+              margin-top: 3px;
+            }
+            
+            span.keywords {
+              font-size: 12px;
+              color: #B16666;
+            }
+            
+            thead {
+              display: none;
+            }
+            
+            main > header {
+              width: 100%;
+              float: left;
+              margin-bottom: 1em;
+            }
+            
+            h1 {
+              float: left;
+            }
+            
+            h1, h2, .label {
+              font-size: 2.5em;
+              text-transform: uppercase;
+              font-weight: 300;
+              font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Lato', 'sans-serif'
+            }
+            
+            #contact {
+             clear: both;
+             float: right;
+             margin-top: 2px;
+            }
+            
+            #contact span + span {
+              margin-left: 10px;
+            }
+            
+            header > span.fa {
+              text-align: center;
+              margin-right: 3px;
+              position: absolute;
+              width: 40px;
+              top: 14px;
+              font-size: 30px;
+              /*transform: translateX(-110%); PDF no likey */
+              margin-left: -50px;
+              color: #DADADA;
+            }
+            
+            .label {
+              float: right;
+              color: #DADADA;
+            }
+            
+            #summary {
+              color: #717171;
+              font-size: 1.25em;
+              margin-top: 6em;
+            }
+            
+            #skills td {
+              padding-top: 7px;
+              padding-bottom: 7px;
+            }
+            
+            #references > p, #references > p > a {
+              color: #961e1e;
+              text-align: center;
+              margin: 30px;
+              font-weight: bold;
+              letter-spacing: 2px;
+              text-transform: uppercase;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <main>
+            <header>
+                 <h1>Jie-Ren (Jarron) <span style="color: #C00000;">Shih</span></h1> <span class="label">Software Developer</span>
+                <p id="contact"> <span class="email"><a href="mailto:jarronshih@gmail.com">jarronshih@gmail.com</a></span>
+                    <span
+                    class="phone">1-408-505-6800</span>
+                </p>
+            </header>
+            <section id="summary">As a 5-year experience developer, infrastructure builder, and security
+                consultant, Jie-Ren Shih is experienced in building secure, scalability,
+                and high availability enterprise product. With experience of hosting container-based
+                and serverless web service on AWS, he is an expert in DevOps process from
+                developing, testing, opertaion, and monitoring modern web service. Jie-Ren
+                is also familiar with cloud related technologies including AWS, kubernetes,
+                docker, and serverless architecture.</section>
+            <hr>
+            <section id="skills">
+                <header> <span class="fa fa-lg fa-code"></span> 
+                     <h2>skills</h2>
 
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
+                </header>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Skill</th>
+                            <th>Keywords</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="width: 25%;">Programing</td>
+                            <td class="keywords">Python, Javascript, C/C++, HTML/CSS,</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 25%;">DevOps</td>
+                            <td class="keywords">Docker, Jenkins, CI/CD, Monitor/Alert, Unittest,</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 25%;">Cloud Skills</td>
+                            <td class="keywords">AWS, Kubernetes, Docker Swarm, SaaS sytem design, Scalable sytem design,</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 25%;">Linux System</td>
+                            <td class="keywords">Boot process, Encryption driver, Network programming,</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <hr>
+            <section id="employment">
+                <header> <span class="fa fa-lg fa-building"></span> 
+                     <h2>employment</h2>
 
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+                </header>
+                <div>
+                     <h3><em>Staff Software Developer</em>,
 
-hr.dashed-hr {
-    border: 1px dashed #eee;
-    background: white;
-}
-.icon-instagram:before {
-  content: "\e905";
-}
-.icon-trophy:before {
-  content: "\e605";
-}
-.icon-office:before {
-  content: "\e606";
-}
-.icon-clock:before {
-  content: "\e60a";
-}
-.icon-reddit:before {
-  content: "\e609";
-}
-.icon-telegram:before {
-  content: "\e904";
-}
-.icon-flickr:before {
-  content: "\f16e";
-}
-.icon-medium:before {
-  content: "\f23a";
-}
-.icon-heart:before {
-  content: "\f004";
-}
-.icon-book:before {
-  content: "\f02d";
-}
-.icon-linkedin:before {
-  content: "\f08c";
-}
-.icon-twitter:before {
-  content: "\f099";
-}
-.icon-github:before {
-  content: "\f09b";
-}
-.icon-link:before {
-  content: "\f0c1";
-}
-.icon-bars:before {
-  content: "\f0c9";
-}
-.icon-pinterest:before {
-  content: "\f0d2";
-}
-.icon-googleplus:before {
-  content: "\f0d5";
-}
-.icon-circle:before {
-  content: "\f111";
-}
-.icon-code:before {
-  content: "\f121";
-}
-.icon-youtube:before {
-  content: "\f167";
-}
-.icon-stackoverflow:before {
-  content: "\f16c";
-}
-.icon-bitbucket:before {
-  content: "\f171";
-}
-.icon-tumblr:before {
-  content: "\f173";
-}
-.icon-dribbble:before {
-  content: "\f17d";
-}
-.icon-skype:before {
-  content: "\f17e";
-}
-.icon-foursquare:before {
-  content: "\f180";
-}
-.icon-gittip:before {
-  content: "\f184";
-}
-.icon-gratipay:before {
-  content: "\f184";
-}
-.icon-stackexchange:before {
-  content: "\f18d";
-}
-.icon-vimeo:before {
-  content: "\f194";
-}
-.icon-graduation-cap:before {
-  content: "\f19d";
-}
-.icon-language:before {
-  content: "\f1ab";
-}
-.icon-child:before {
-  content: "\f1ae";
-}
-.icon-behance:before {
-  content: "\f1b5";
-}
-.icon-spotify:before {
-  content: "\f1bc";
-}
-.icon-soundcloud:before {
-  content: "\f1be";
-}
-.icon-codepen:before {
-  content: "\f1cb";
-}
-.icon-hackernews:before {
-  content: "\f1d4";
-}
-.icon-lastfm:before {
-  content: "\f202";
-}
-.icon-angellist:before {
-  content: "\f209";
-}
-.icon-facebook:before {
-  content: "\f230";
-}
-.icon-meetup .path1:before {
-  content: "\e901";
-  color: rgb(255, 255, 255);
-}
-.icon-meetup .path2:before {
-  content: "\e902";
-  margin-left: -1.5em;
-  color: rgb(240, 1, 1);
-}
-.icon-meetup .path3:before {
-  content: "\e903";
-  margin-left: -1.5em;
-  color: rgb(3, 3, 3);
-}
-.icon-blogger:before {
-  content: "\e900";
-}
-.icon-exercism:before {
-  content: "\e601";
-}
-.icon-profile:before {
-  content: "\e600";
-}
-.icon-tools:before {
-  content: "\e034";
-}
-.icon-location:before {
-  content: "\e602";
-}
-.icon-mail:before {
-  content: "\e603";
-}
-.icon-phone:before {
-  content: "\e03f";
-}
-.icon-newspaper:before {
-  content: "\e607";
-}
-.icon-dots-three-horizontal:before {
-  content: "\e60b";
-}
-.icon-thumbs-up:before {
-  content: "\e604";
-}
-.icon-chevron-down:before {
-  content: "\e60c";
-}
-.icon-chevron-up:before {
-  content: "\e60d";
-}
-.icon-dots-three-horizontal:before {
-  content: "\e60b";
-}
-.icon-thumbs-up:before {
-  content: "\e604";
-}
-.icon-board:before {
-  content: "\e608";
-}
+              <a href="https://www.trendmicro.com/">Trend Micro</a>
 
+              </h3> <span class="tenure">2017-01 — Present</span>
+                    <p>
+                        <p>
+                            <br>Design and implement SaaS service running in cloud platform with container
+                            orchestration. Targeting for automatically CI/CD and high test coverage.</p>
+                    </p>
+                    <ul>
+                        <li>Design, develop and operate <em>container-based services</em> from company
+                            data center to AWS for SaaS.</li>
+                        <li>Introduce <em>asynchronous</em> on Python to enhance process and I/O usage
+                            with 60% improvement.</li>
+                        <li><em>Legacy code remodeled</em>: Python 2 to 3, built up unittest and integration
+                            test from scratch (0% to over 90%).</li>
+                        <li>Separate data streaming part from monolithic application to embrace <em>serviceless framework</em>.</li>
+                    </ul>
+                </div>
+                <div>
+                     <h3><em>Senior Software Developer</em>,
 
-.relative {
-  position: relative;
-}
-.clear-margin {
-  margin: 0;
-}
-.space-top {
-  margin-top: 10px;
-}
-.space-right {
-  margin-right: 10px;
-}
-.space-bottom {
-  margin-bottom: 10px;
-}
-.mr-5 {
-  margin-right: 5px;
-}
-.mr-10 {
-  margin-right: 10px;
-}
-.ml-5 {
-  margin-left: 5px;
-}
-.labels {
-  line-height: 2;
-}
-.label-keyword {
-  display: inline-block;
-  background: #7eb0db;
-  color: white;
-  font-size: 0.9em;
-  padding: 5px;
-  border: 1px solid #357ebd;
-  margin-right: 5px;
-}
-.label-keyword:last-child {
-  margin-right: 0;
-}
-.link-disguise {
-  color: inherit;
-}
-.link-disguise:hover {
-  color: inherit;
-}
-.clear-margin {
-  margin: 0;
-}
-@media (max-width: 992px) {
-  .clear-margin-sm {
-    margin-bottom: 0;
-  }
-}
-.fs-lg {
-  font-size: 1.33333333em;
-  line-height: .75em;
-  vertical-align: -15%;
-}
-.fs-2x {
-  font-size: 2em;
-}
-.fs-3x {
-  font-size: 3em;
-}
-.fs-4x {
-  font-size: 4em;
-}
-.btn-circle-sm {
-  width: 28px;
-  height: 28px;
-  line-height: 28px;
-  border-radius: 50%;
-  text-align: center;
-  padding: 0;
-  outline: none !important;
-}
-@font-face {
-  font-family: 'jst-elegant';
-  src: url("//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.eot?f218wo");
-  src: url("//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.eot?f218wo#iefix") format('embedded-opentype'), url("//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.ttf?f218wo") format('truetype'), url("//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.woff?f218wo") format('woff'), url("//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.svg?f218wo#icomoon") format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-[class^="icon-"],
-[class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'jst-elegant' !important;
-}
-body {
-  font-family: 'Lato';
-  background: #f0f0f0;
-  color: #333;
-}
-.main {
-  padding: 5px;
-}
-.card {
-  background: white;
-  border: 1px solid #e6e6e6;
-  border-radius: 3px;
-  min-height: 300px;
-  padding: 10px 0;
-}
-.card-nested {
-  min-height: 0;
-  border-width: 1px 0 0 0;
-}
-.card-nested:before,
-.card-nested:after {
-  content: " ";
-  display: table;
-}
-.card-nested:after {
-  clear: both;
-}
-@media (max-width: 480px) {
-  .card-nested {
-    padding: 5px 0;
-  }
-}
-.background-card {
-  padding: 10px 20px;
-}
-.card-wrapper {
-  padding: 5px;
-}
-@media (max-width: 992px) {
-  .card-wrapper {
-    float: none !important;
-  }
-}
-.background-details .detail {
-  display: table;
-  margin-bottom: 20px;
-}
-.background-details .detail .icon {
-  min-width: 45px;
-  max-width: 45px;
-  text-align: center;
-}
-.background-details .detail .info {
-  width: 100%;
-}
-.background-details .detail .title,
-.background-details .detail .icon {
-  color: #707070;
-}
-.background-details .detail .mobile-title {
-  display: none;
-}
-@media (max-width: 480px) {
-  .background-details .detail .mobile-title {
-    display: inline-block;
-    margin-left: 5px;
-    font-weight: bold;
-    text-transform: uppercase;
-    vertical-align: middle;
-  }
-}
-.background-details .detail .icon,
-.background-details .detail .info {
-  display: table-cell;
-  padding: 0 10px;
-}
-@media (max-width: 480px) {
-  .background-details .detail {
-    display: block;
-  }
-  .background-details .detail .icon {
-    max-width: inherit;
-    min-width: inherit;
-    text-align: left;
-  }
-  .background-details .detail .icon,
-  .background-details .detail .info {
-    display: block;
-    padding: 10px 0;
-  }
-  .background-details .detail .title {
-    display: none;
-  }
-}
-.info .content.has-sidebar {
-  width: 80%;
-  box-sizing: border-box;
-  float: left;
-  padding: 0 10px;
-  border-right: 1px solid #cdcdcd;
-}
-@media (max-width: 992px) {
-  .info .content.has-sidebar {
-    width: 100%;
-    border-right: 0;
-  }
-}
-@media (max-width: 480px) {
-  .info .content.has-sidebar {
-    padding: 0 2px;
-  }
-}
-.info .sidebar {
-  margin-left: 80%;
-  box-sizing: border-box;
-  padding: 10px;
-}
-@media (max-width: 480px) {
-  ul {
-    padding-left: 25px;
-  }
-}
-.current-event {
-  font-size: 8px;
-  color: #5ACE24;
-  position: absolute;
-  right: 100%;
-  top: 4px;
-  left: -10px;
-}
-.mop-wrapper > p:last-child {
-  margin: 0;
-}
-/*
-    Credits: http://codyhouse.co/demo/smart-fixed-navigation/index.html
-*/
-.floating-nav-trigger {
-  width: 50px;
-  height: 50px;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
-  -webkit-transition: background-color 0.5s ease;
-  -o-transition: background-color 0.5s ease;
-  transition: background-color 0.5s ease;
-  display: block;
-  border-radius: 50%;
-  text-align: center;
-  background-color: white;
-  font-size: 1.5em;
-  color: #357ebd;
-  z-index: 100;
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  text-decoration: none !important;
-}
-.floating-nav-trigger > [class^="icon-"],
-.floating-nav-trigger [class*=" icon-"],
-.floating-nav-trigger > .close-icon {
-  line-height: 50px;
-}
-.floating-nav-trigger .close-icon {
-  display: none;
-}
-.floating-nav-trigger:hover {
-  color: #1f496e;
-  background-color: #e6e6e6;
-}
-.floating-nav-trigger.is-open {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-.floating-nav-trigger.is-open .close-icon {
-  display: inherit;
-}
-.floating-nav-trigger.is-open .icon-bars {
-  display: none;
-}
-.floating-nav-trigger.is-open:hover {
-  background-color: white;
-}
-.floating-nav {
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  -o-transform: scale(0);
-  transform: scale(0);
-  -webkit-transform-origin: 100% 100%;
-  -moz-transform-origin: 100% 100%;
-  -ms-transform-origin: 100% 100%;
-  transform-origin: 100% 100%;
-  -webkit-transition: transform 0.3s, visibility 0s 0.3s;
-  -o-transition: transform 0.3s, visibility 0s 0.3s;
-  transition: transform 0.3s, visibility 0s 0.3s;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
-  position: fixed;
-  z-index: 50;
-  right: 10px;
-  bottom: 10px;
-  background-color: white;
-  width: 90%;
-  max-width: 400px;
-  visibility: hidden;
-  overflow: hidden;
-}
-.floating-nav ul {
-  font-size: 1.2em;
-  margin: 0;
-}
-.floating-nav ul li {
-  border-bottom: 1px solid #eff2f6;
-}
-.floating-nav ul li a {
-  padding: 20px;
-  text-decoration: none;
-  color: #357ebd;
-  display: block;
-}
-.floating-nav ul li a:hover {
-  color: #1f496e;
-}
-.floating-nav ul li:last-child {
-  border-bottom: 0;
-}
-.floating-nav.is-visible {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: transform 0.3s, visibility 0s 0s;
-  -o-transition: transform 0.3s, visibility 0s 0s;
-  transition: transform 0.3s, visibility 0s 0s;
-  visibility: visible;
-}
-@media (max-width: 992px) {
-  .profile-card-wrapper {
-    position: relative;
-  }
-}
-.profile-card-wrapper .profile-card {
-  padding: 10px;
-}
-.profile-pic {
-  padding: 20px 0;
-}
-@media (max-width: 992px) {
-  .profile-pic {
-    padding: 10px 0;
-  }
-}
-.profile-pic img {
-  width: 100px;
-  height: 100px;
-}
-@media (max-width: 992px) {
-  .name {
-    margin-top: 10px;
-  }
-}
-@media (max-width: 768px) {
-  .contact-details {
-    text-align: center;
-  }
-}
-.contact-details .detail {
-  display: table;
-  padding: 10px 0;
-}
-.contact-details .detail .icon {
-  padding: 0 10px;
-  color: #707070;
-  min-width: 2.2em;
-}
-@media (max-width: 992px) {
-  .contact-details .detail .icon {
-    padding: 0 5px 0 0;
-    min-width: 0px;
-  }
-}
-.contact-details .detail .info {
-  font-size: 0.8em;
-}
-.contact-details .detail .icon,
-.contact-details .detail .info {
-  display: table-cell;
-  vertical-align: middle;
-}
-@media (max-width: 768px) {
-  .contact-details .detail {
-    position: relative;
-    float: left;
-    width: 100%;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-@media (max-width: 992px) {
-  .contact-details .detail {
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding: 10px;
-  }
-  .contact-details .detail .icon,
-  .contact-details .detail .info {
-    display: inline-block;
-  }
-}
-@media (max-width: 992px) and (min-width: 768px) {
-  .contact-details .detail {
-    float: left;
-    width: 25%;
-  }
-}
-.social-links {
-  line-height: 2.5;
-}
-.social-link {
-  margin-left: 5px;
-  min-width: 35px;
-  display: inline-block;
-}
-.social-link:first-child {
-  margin-left: 0;
-}
-.social-link:hover {
-  text-decoration: none;
-}
-.link-github {
-  color: #454545;
-}
-.link-github:hover,
-.link-github:focus {
-  text-decoration: none;
-  color: #2b2b2b;
-}
-.link-twitter {
-  color: #33ccff;
-}
-.link-twitter:hover,
-.link-twitter:focus {
-  text-decoration: none;
-  color: #00bfff;
-}
-.link-blog {
-  color: #f36f24;
-}
-.link-blog:hover,
-.link-blog:focus {
-  text-decoration: none;
-  color: #d8560c;
-}
-.link-linkedin {
-  color: #007bb6;
-}
-.link-linkedin:hover,
-.link-linkedin:focus {
-  text-decoration: none;
-  color: #005983;
-}
-.link-skype {
-  color: #12A5F4;
-}
-.link-skype:hover,
-.link-skype:focus {
-  text-decoration: none;
-  color: #0986ca;
-}
-.link-instagram {
-  color: #e4405f;
-}
-.link-instagram:hover,
-.link-instagram:focus {
-  text-decoration: none;
-  color: #d31e40;
-}
-.link-stackoverflow {
-  color: #8e8e92;
-}
-.link-stackoverflow:hover,
-.link-stackoverflow:focus {
-  text-decoration: none;
-  color: #747479;
-}
-.link-stackexchange {
-  color: #62b0df;
-}
-.link-stackexchange:hover,
-.link-stackexchange:focus {
-  text-decoration: none;
-  color: #389bd6;
-}
-.link-lastfm {
-  color: #d12127;
-}
-.link-lastfm:hover,
-.link-lastfm:focus {
-  text-decoration: none;
-  color: #a51a1f;
-}
-.link-soundcloud {
-  color: #e8822d;
-}
-.link-soundcloud:hover,
-.link-soundcloud:focus {
-  text-decoration: none;
-  color: #cc6916;
-}
-.link-googleplus {
-  color: #dd4b39;
-}
-.link-googleplus:hover,
-.link-googleplus:focus {
-  text-decoration: none;
-  color: #c23321;
-}
-.link-youtube {
-  color: #dd4b39;
-}
-.link-youtube:hover,
-.link-youtube:focus {
-  text-decoration: none;
-  color: #c23321;
-}
-.link-pinterest {
-  color: #bd091f;
-}
-.link-pinterest:hover,
-.link-pinterest:focus {
-  text-decoration: none;
-  color: #8c0717;
-}
-.link-gratipay {
-  color: #630;
-}
-.link-gratipay:hover,
-.link-gratipay:focus {
-  text-decoration: none;
-  color: #331a00;
-}
-.link-vimeo {
-  color: #17b3e8;
-}
-.link-vimeo:hover,
-.link-vimeo:focus {
-  text-decoration: none;
-  color: #128fba;
-}
-.link-behance {
-  color: #2c98cf;
-}
-.link-behance:hover,
-.link-behance:focus {
-  text-decoration: none;
-  color: #2379a5;
-}
-.link-codepen {
-  color: #1c1c1c;
-}
-.link-codepen:hover,
-.link-codepen:focus {
-  text-decoration: none;
-  color: #020202;
-}
-.link-foursquare {
-  color: #fa4778;
-}
-.link-foursquare:hover,
-.link-foursquare:focus {
-  text-decoration: none;
-  color: #f91554;
-}
-.link-reddit {
-  color: #545454;
-}
-.link-reddit:hover,
-.link-reddit:focus {
-  text-decoration: none;
-  color: #3b3b3b;
-}
-.link-spotify {
-  color: #acd200;
-}
-.link-spotify:hover,
-.link-spotify:focus {
-  text-decoration: none;
-  color: #829f00;
-}
-.link-tumblr {
-  color: #2d4661;
-}
-.link-tumblr:hover,
-.link-tumblr:focus {
-  text-decoration: none;
-  color: #1d2d3e;
-}
-.link-dribbble {
-  color: #ce366f;
-}
-.link-dribbble:hover,
-.link-dribbble:focus {
-  text-decoration: none;
-  color: #a82959;
-}
-.link-facebook {
-  color: #4b6daa;
-}
-.link-facebook:hover,
-.link-facebook:focus {
-  text-decoration: none;
-  color: #3b5687;
-}
-.link-angellist {
-  color: black;
-}
-.link-angellist:hover,
-.link-angellist:focus {
-  text-decoration: none;
-  color: #000000;
-}
-.link-bitbucket {
-  color: #205081;
-}
-.link-bitbucket:hover,
-.link-bitbucket:focus {
-  text-decoration: none;
-  color: #163758;
-}
-.link-hackernews {
-  color: #ff6600;
-}
-.link-hackernews:hover,
-.link-hackernews:focus {
-  text-decoration: none;
-  color: #cc5200;
-}
-.link-exercism {
-  color: #d81d4e;
-}
-.link-exercism:hover,
-.link-exercism:focus {
-  text-decoration: none;
-  color: #ab173e;
-}
-.link-blogger {
-  color: #FF9234;
-}
-.link-blogger:hover,
-.link-blogger:focus {
-  text-decoration: none;
-  color: #ff7701;
-}
-.link-medium {
-  color: #00AB6C;
-}
-.link-medium:hover,
-.link-medium:focus {
-  text-decoration: none;
-  color: #00784c;
-}
-.link-flickr {
-  color: black;
-}
-.link-flickr:hover,
-.link-flickr:focus {
-  text-decoration: none;
-  color: #000000;
-}
-.link-telegram {
-  color: #3BABDD;
-}
-.link-telegram:hover,
-.link-telegram:focus {
-  text-decoration: none;
-  color: #2291c3;
-}
-.card-skills {
-  position: relative;
-}
-.skill-level {
-  border-radius: 3px;
-  position: absolute;
-  top: 10px;
-  bottom: 10px;
-  left: 0;
-  width: 10px;
-  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2);
-}
-.skill-level .skill-progress {
-  position: absolute;
-  border-radius: 3px;
-  bottom: 0;
-  width: 100%;
-  -webkit-transition: height 1s ease;
-}
-.skill-level .skill-progress.beginner {
-  height: 50%;
-  background: #e74c3c;
-}
-.skill-level .skill-progress.intermediate {
-  height: 70%;
-  background: #f1c40f;
-}
-.skill-level .skill-progress.advanced {
-  height: 80%;
-  background: #428bca;
-}
-.skill-level .skill-progress.master {
-  height: 95%;
-  background: #5cb85c;
-}
-.skill-info {
-  margin-left: 15px;
-}
-@media (max-width: 480px) {
-  .skill-info {
-    margin-left: 20px;
-  }
-}
-@media (max-width: 768px) {
-  .quote {
-    font-size: inherit;
-  }
-}
-.icon-meetup .path2:before {
-  margin-left: 0;
-}
-@media print {
-  a[href]:after {
-    content: none !important;
-  }
-  .profile-card {
-    text-align: center;
-  }
-  .profile-pic {
-    display: inline-block;
-    vertical-align: middle;
-  }
-  .profile-pic img {
-    border-radius: 0;
-  }
-  .name-and-profession {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 15px;
-  }
-  .contact-details .detail {
-    position: relative;
-    float: left;
-    width: 25%;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding: 0;
-  }
-  .floating-nav,
-  .floating-nav-trigger {
-    display: none;
-  }
-  .pagebreak {
-    page-break-before: always;
-  }
-}
-</style></head><body itemscope="itemscope" itemtype="http://schema.org/Person"><div class="container-fluid"><div class="row main clearfix"><a class="js-floating-nav-trigger floating-nav-trigger" href="#"><i class="icon-bars"></i><span class="close-icon">&times;</span></a><nav class="floating-nav js-floating-nav"><ul class="list-unstyled"><li><a href="#about"><i class="mr-10 icon-board"></i>About</a></li><li><a href="#work-experience"><i class="mr-10 icon-office"></i>Work Experience</a></li><li><a href="#skills"><i class="mr-10 icon-tools"></i>Skills</a></li><li><a href="#education"><i class="mr-10 icon-graduation-cap"></i>Education</a></li><li><a href="#awards"><i class="mr-10 icon-trophy"></i>Awards</a></li><li><a href="#certificates"><i class="mr-10 icon-board"></i>Certificates</a></li><li><a href="#publications"><i class="mr-10 icon-newspaper"></i>Publications</a></li><li><a href="#interests"><i class="mr-10 icon-heart"></i>Interests</a></li></ul></nav><section class="col-md-3 card-wrapper profile-card-wrapper affix"><div class="card profile-card"><span class="profile-pic-container"><div class="profile-pic"><img class="media-object img-circle center-block" data-src="holder.js/100x100" alt="Jie-Ren (Jarron) Shih" src="https://github.com/jarronshih/jarronshih.github.io/raw/master/assets/DJ_512x512.png" itemprop="image"/></div><div class="name-and-profession text-center"><h3 itemprop="name"><b>Jie-Ren (Jarron) Shih</b></h3><h5 class="text-muted" itemprop="jobTitle">Programmer</h5></div></span><hr/><div class="contact-details clearfix"><div class="detail"><span class="icon"><i class="icon fs-lg icon-location"></i></span><span class="info">San Jose, California, US, CA 95117</span></div><div class="detail"><span class="icon"><i class="icon fs-lg icon-phone"></i></span><span class="info" itemprop="telephone">+1-408-505-6800</span></div><div class="detail"><span class="icon"><i class="icon fs-lg icon-mail"></i></span><span class="info"><a class="link-disguise" href="mailto:jarronshih@gmail.com" itemprop="email">jarronshih@gmail.com</a></span></div><div class="detail"><span class="icon" title="Languages I speak"><i class="icon fs-lg icon-language"></i></span><span class="info">English, Chinese</span></div></div><hr/><div class="social-links text-center"><div><a class="fs-2x social-link link-github icon-github" href="https://github.com/jarronshih" target="_blank" data-toggle="tooltip" title="Jie-Ren (Jarron) Shih on GitHub"></a><a class="fs-2x social-link link-linkedin icon-linkedin" href="https://www.linkedin.com/in/jarronshih" target="_blank" data-toggle="tooltip" title="Jie-Ren (Jarron) Shih on LinkedIn"></a></div></div></div></section><section class="col-md-9 card-wrapper pull-right"><div class="card background-card"><div class="background-details"><div class="detail" id="about"><div class="icon"><i class="fs-lg icon-board"></i><span class="mobile-title">About</span></div><div class="info"><h4 class="title text-uppercase">About</h4><div class="card card-nested"><div class="content mop-wrapper" itemprop="description"><p>As a 5 years experienced security expert, network consultant, infrastructure builder and developer, Jie-Ren is experienced in developing secure enterprise software and building high scalability H/A product, while experienced in all kind of virtual cloud platform, hypervisor and infrastructure from AWS, Azure, vmware, docker to serverless architecture. Jie-Ren is also familiar with Agile and DevOps process, with experience of hosting container-based web service on AWS.</p>
-</div></div></div></div><div class="detail" id="work-experience"><div class="icon"><i class="fs-lg icon-office"></i><span class="mobile-title">Work Experience</span></div><div class="info"><h4 class="title text-uppercase">Work Experience</h4><div class="card card-nested"></div><ul class="list-unstyled clear-margin"><li class="clearfix"><div class="content"><p class="clear-margin relative"><strong>Staff Software Developer</strong>,&nbsp;<a href="https://www.trendmicro.com/" target="_blank">Trend Micro</a></p><p class="text-muted"><small><span class="space-right">Jan, 2017 - Present</span></small></p><div class="mop-wrapper space-bottom"><p>Design and implement SaaS service running in cloud platform with container orchestration. Targeting for automatically CI/CD and high test coverage.</p>
-</div><ul><li class="mop-wrapper"><p>Design, develop and operate container-based services from company data center to Cloud provider for SaaS.</p>
-</li><li class="mop-wrapper"><p>Enhance the unit code coverage of legacy code to fit the modern DevOps process from scratch.</p>
-</li><li class="mop-wrapper"><p>Separate data streaming part from monolithic application to embrace serviceless framework.</p>
-</li><li class="mop-wrapper"><p>Introduce asynchronous on Python to enhance process and I/O usage.</p>
-</li></ul></div></li><li class="clearfix"><div class="content"><hr/><p class="clear-margin relative"><strong>Senior Software Developer</strong>,&nbsp;<a href="https://www.trendmicro.com/" target="_blank">Trend Micro</a></p><p class="text-muted"><small><span class="space-right">Oct, 2015 - Dec, 2016</span><span><i class="icon-clock mr-5"></i>1 year 3 months</span></small></p><div class="mop-wrapper space-bottom"><p>Relocated to USA office. In network defense group, responsible for CI/CD, network traffic parsing and hosting an SaaS service.</p>
-</div><ul><li class="mop-wrapper"><p>Introduce CI/CD practice to the product, as the standard of the following project.</p>
-</li><li class="mop-wrapper"><p>Enhance QoS to SaaS service to support multi-tenancy customers sharing resource in the cloud.</p>
-</li><li class="mop-wrapper"><p>Parsing network traffic in packet level, work as data engineer in network analysis product.</p>
-</li></ul></div></li><li class="clearfix"><div class="content"><hr/><p class="clear-margin relative"><strong>Senior Software Developer</strong>,&nbsp;<a href="https://www.trendmicro.com/" target="_blank">Trend Micro</a></p><p class="text-muted"><small><span class="space-right">Jan, 2015 - Oct, 2015</span><span><i class="icon-clock mr-5"></i>9 months</span></small></p><div class="mop-wrapper space-bottom"><p>In Cloud and Data Center Security Product team, the most profitable products, responsible for SAP virus scan on Windows platform, including Anti-Malware, JavaScript active script scan and Mail scan.</p>
-</div><ul><li class="mop-wrapper"><p>Integrate Anti-Malware solution and active script scan solution to prevent Cross Site Scripting Attack (XSS).</p>
-</li><li class="mop-wrapper"><p>Develop virus scan interface for SAP on Windows platform to meet the market demand.</p>
-</li></ul></div></li><li class="clearfix"><div class="content"><hr/><p class="clear-margin relative"><strong>Software Developer</strong>,&nbsp;<a href="https://www.trendmicro.com/" target="_blank">Trend Micro</a></p><p class="text-muted"><small><span class="space-right">Sep, 2012 - Dec, 2014</span><span><i class="icon-clock mr-5"></i>2 years 4 months</span></small></p><div class="mop-wrapper space-bottom"><p>In Cloud Storage Encryption Product Team, responsible for development boot device encryption feature and Linux software agents on cloud service platform.</p>
-</div><ul><li class="mop-wrapper"><p>Implement boot disk encryption feature to prevent boot data leakage on Windows and variant Linux distributions, including Ubunto, CentOS, RHEL, AmazonLinux and SUSE.</p>
-</li><li class="mop-wrapper"><p>Implement software agent on major cloud service providers including Amazon EC2, Microsoft Azure and HP-Cloud</p>
-</li><li class="mop-wrapper"><p>2013 Q2 Trend Engineer of Quarter</p>
-</li></ul></div></li><li class="clearfix"><div class="content"><hr/><p class="clear-margin relative"><strong>Research Assistant, Part-time</strong>,&nbsp;<a href="https://www.intel.com/" target="_blank">Intel Corp.</a></p><p class="text-muted"><small><span class="space-right">Jan, 2011 - Jun, 2012</span><span><i class="icon-clock mr-5"></i>1 year 6 months</span></small></p><div class="mop-wrapper space-bottom"><p>An energy-efficient programmable cryptographic coprocessor based on elliptic-curve and post-quantum cryptography . As chief designer of hybrid model, build up high level hardware simulation and scalable ASIC analysis.</p>
-</div><ul><li class="mop-wrapper"><p>Implement scalable ASIC with NTRU and TTS cryptography with 25% area reduction.</p>
-</li><li class="mop-wrapper"><p>Determine the optimal degree of parallelism from software simulation</p>
-</li></ul></div></li></ul></div></div><div class="detail" id="skills"><div class="icon"><i class="fs-lg icon-tools"></i><span class="mobile-title">Skills Summary</span></div><div class="info"><h4 class="title text-uppercase">Skills Summary</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested card-skills"><div class="content"><strong>Software Development</strong><div class="space-top labels"><span class="label label-keyword">Python</span><span class="label label-keyword">Javascript</span><span class="label label-keyword">C/C++</span><span class="label label-keyword">html/css</span></div></div></li><li class="card card-nested card-skills"><div class="content"><strong>DevOps</strong><div class="space-top labels"><span class="label label-keyword">Docker</span><span class="label label-keyword">k8t</span><span class="label label-keyword">docker swarm</span><span class="label label-keyword">Jenkins</span><span class="label label-keyword">CI/CD</span></div></div></li><li class="card card-nested card-skills"><div class="content"><strong>Cloud Skills</strong><div class="space-top labels"><span class="label label-keyword">AWS</span><span class="label label-keyword">k8t</span><span class="label label-keyword">elasticsearch</span><span class="label label-keyword">Scalable Sytem design</span><span class="label label-keyword">Docker Data Center</span></div></div></li><li class="card card-nested card-skills"><div class="content"><strong>Linux System</strong><div class="space-top labels"><span class="label label-keyword">Boot Process</span><span class="label label-keyword">Encryption Driver</span><span class="label label-keyword">Network programming</span></div></div></li></ul></div></div></div><div class="detail" id="education"><div class="icon"><i class="fs-lg icon-graduation-cap"></i><span class="mobile-title">Education</span></div><div class="info"><h4 class="title text-uppercase">Education</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested"><div class="content"><p class="clear-margin relative"><strong>Bachelor of Science</strong>,&nbsp;Electrical Engineering,&nbsp;<a href="https://www.ntu.edu.tw/" target="_blank">National Taiwan University</a></p><p class="text-muted"><small>Sep, 2006 - Jul, 2010</small></p><i>3.73/4.00</i><div class="mop-wrapper space-bottom"><p>Earn First Prize in 2010 NTUEE Undergraduate Outstanding Project, Practical Attack on MIFARE Classic.</p>
-</div></div></li><li class="card card-nested"><div class="content"><p class="clear-margin relative"><strong>Master of Science</strong>,&nbsp;Electrical Engineering,&nbsp;<a href="https://www.ntu.edu.tw/" target="_blank">National Taiwan University</a></p><p class="text-muted"><small>Sep, 2010 - Jul, 2012</small></p><i>4.00/4.00</i><div class="mop-wrapper space-bottom"><p>Thesis: An efficient ASIC implementation of Lattice-based and Multivariate Post-Quantum Cryptography</p>
-</div><div class="space-top labels"><span class="label label-keyword">EE5157 Multi-core System and Software</span><span class="label label-keyword">CSIE5400 Artificial Intelligence</span><span class="label label-keyword">CSIE7210 Parallel and Distribution Computing</span><span class="label label-keyword">MATH5149 Foundation of Cryptography</span></div></div></li></ul></div></div></div><div class="detail" id="awards"><div class="icon"><i class="fs-lg icon-trophy"></i><span class="mobile-title">Awards</span></div><div class="info"><h4 class="title text-uppercase">Awards</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested"><div class="content"><p class="clear-margin" itemprop="award"><strong>2013 Q2 Engineer of Quarter</strong>,&nbsp;Trend Micro</p><p class="text-muted"><small>Awarded on: Jun, 2013</small></p><div class="mop-wrapper"></div></div></li></ul></div></div></div><div class="detail" id="certificates"><div class="icon"><i class="fs-lg icon-board"></i><span class="mobile-title">Certificates</span></div><div class="info"><h4 class="title text-uppercase">Certificates</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested"><div class="content"><p class="clear-margin" itemprop="certificate"><strong><a href="https://github.com/jarronshih/jarronshih.github.io/raw/master/assets/csm_scrum.pdf" target="_blank">Certified ScrumMaster</a></strong>, Scrum Alliance</p><p class="text-muted"><small>Issued on: Jan, 2015</small></p><div class="mop-wrapper"></div></div></li></ul></div></div></div><div class="detail" id="publications"><div class="icon"><i class="fs-lg icon-newspaper"></i><span class="mobile-title">Publications</span></div><div class="info"><h4 class="title text-uppercase">Publications</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested"><div class="content"><p class="clear-margin"><strong><a href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&amp;Sect2=HITOFF&amp;d=PALL&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&amp;r=1&amp;f=G&amp;l=50&amp;s1=9202058.PN.&amp;OS=PN/9202058&amp;RS=PN/9202058" target="_blank">[Patent] Root Volume Encryption Mechanism in Para-virtualized Virtual Machine</a>&nbsp;,&nbsp;</strong>Trend Micro</p><p class="text-muted"><small>Published on: Dec 01, 2015</small></p><div class="mop-wrapper"><p>The present invention is generally related to provide data protection. More particularly, the present invention is directed to achieve root volume encryption in a para-virtualized virtual machine.</p>
-</div></div></li><li class="card card-nested"><div class="content"><p class="clear-margin"><strong><a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6472114" target="_blank">Securing M2M with Post-quantum Public-key Cryptography</a>&nbsp;,&nbsp;</strong>Emerging and Selected Topics in Circuits and Systems / IEEE Journal</p><p class="text-muted"><small>Published on: Mar 07, 2013</small></p><div class="mop-wrapper"><p>We present an ASIC implementation of two post-quantum public-key cryptosystems (PKCs): NTRU-Encrypt and TTS. It represents a first step toward securing machine-to-machine (M2M) systems using strong, hardware-assisted PKC. In contrast to the conventional wisdom that PKC is too expensive for M2M sensors, it actually can lower the total cost of ownership because of cost savings in provision, deployment, operation, maintenance, and general management.</p>
-</div></div></li><li class="card card-nested"><div class="content"><p class="clear-margin"><strong><a href="http://www.airitilibrary.com/Publication/alDetailedMesh?docid=c0000078-201005-201007130127-201007130127-126-132" target="_blank">MIFARE Classic: Practical Attacks and Defenses</a>&nbsp;,&nbsp;</strong>Chinese Cryptology and Information Security Association</p><p class="text-muted"><small>Published on: May 27, 2013</small></p><div class="mop-wrapper"><p>We report our experience attacking a real MIFARE Classic system. Specifically, we have implemented a brute-force search using NVIDIA graphics cards to verify the claims in the literature. To our best knowledge, this is the first report in the literature of a practical long-range attack. These attacks disarm all cryptographic protection of MIFARE Classic, making it extremely difficult to secure transactions. Lastly, we take up the challenge and present our ideas how to defend against most attacks using practical mechanisms that do not require any hardware changes.</p>
-</div></div></li><li class="card card-nested"><div class="content"><p class="clear-margin"><strong><a href="http://ieeexplore.ieee.org/document/5088976" target="_blank">A practical experience with RFID security</a>&nbsp;,&nbsp;</strong>Mobile Data Management: Systems, Services and Middleware, 2009 / IEEE</p><p class="text-muted"><small>Published on: May 18, 2009</small></p><div class="mop-wrapper"><p>We capture and analyze the communication between a legitimate reader and an EasyCard using GNURadio, an open-source software-defined radio running on PC. We will share our experiences with EasyCard security and provide some insights into RFID security in practice.</p>
-</div></div></li></ul></div></div></div><div class="detail" id="interests"><div class="icon"><i class="fs-lg icon-heart"></i><span class="mobile-title">Interests</span></div><div class="info"><h4 class="title text-uppercase">Interests</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested"><p><strong>Contract bridge</strong></p><div class="space-top labels"><span class="label label-keyword">card game</span><span class="label label-keyword">mind game</span></div></li></ul></div></div></div></div></div></section></div></div><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script><script>$(function () {
-  var toggleFloatingMenu = function() {
-    $( '.js-floating-nav' ).toggleClass( 'is-visible' );
-    $( '.js-floating-nav-trigger' ).toggleClass( 'is-open' );
-  };
+              <a href="https://www.trendmicro.com/">Trend Micro</a>
 
-  $( ".background-card" ).css( "min-height", window.screen.availHeight + "px" );
-  $( "[data-toggle=tooltip]" ).tooltip();
-  $( '.js-floating-nav-trigger' ).on( 'click', function(e) {
-    e.preventDefault();
-    toggleFloatingMenu();
-  });
-  $( '.js-floating-nav a' ).on( 'click', toggleFloatingMenu );
+              </h3> <span class="tenure">2015-10 — 2016-12</span>
+                    <p>
+                        <p>
+                            <br>In network defense group, responsible for CI/CD, network traffic parsing
+                            and hosting a Sandbox SaaS service.</p>
+                    </p>
+                    <ul>
+                        <li>Introduce <em>CI/CD</em> best practice to the product, as the standard of
+                            the following project.</li>
+                        <li>Enhance SaaS service to support multi-tenancy customers sharing resource
+                            in the cloud.</li>
+                        <li>Parsing network traffic in packet level, work as <em>data engineer</em> in
+                            network analysis product.</li>
+                    </ul>
+                </div>
+                <div>
+                     <h3><em>Senior Software Developer</em>,
 
-  $("#remaining-profiles").on('show.bs.collapse', function() {
-    $( '.js-profiles-collapse > i' )
-      .removeClass( 'icon-chevron-down' )
-      .addClass( 'icon-chevron-up' );
-  });
+              <a href="https://www.trendmicro.com/">Trend Micro</a>
 
-  $("#remaining-profiles").on('hidden.bs.collapse', function() {
-    $( '.js-profiles-collapse > i' )
-      .removeClass( 'icon-chevron-up' )
-      .addClass( 'icon-chevron-down' );
-  });
-});
-</script><script>WebFontConfig = {
-  google: { families: [ 'Lato:300,400,700:latin' ] }
-};
-(function() {
-  var wf = document.createElement('script');
-  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-  wf.type = 'text/javascript';
-  wf.async = 'true';
-  var s = document.getElementsByTagName('script')[0];
-  s.parentNode.insertBefore(wf, s);
-})();</script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+              </h3> <span class="tenure">2015-01 — 2015-10</span>
+                    <p>
+                        <p>
+                            <br>In Cloud and Data Center Security Product team, the most profitable products,
+                            responsible for SAP virus scan on Windows platform, including Anti-Malware,
+                            JavaScript active script scan and Mail scan.</p>
+                    </p>
+                    <ul>
+                        <li>Integrate Anti-Malware solution and active script scan solution to prevent <em>Cross Site Scripting Attack</em>.</li>
+                        <li>Develop virus scan interface for SAP on Windows platform to meet the market
+                            demand.</li>
+                    </ul>
+                </div>
+                <div>
+                     <h3><em>Software Developer</em>,
 
-ga('create', 'UA-96382673-1', 'auto');
-ga('send', 'pageview');</script></body></html>
+              <a href="https://www.trendmicro.com/">Trend Micro</a>
+
+              </h3> <span class="tenure">2012-09 — 2014-12</span>
+                    <p>
+                        <p>
+                            <br>In Cloud Storage Encryption Product Team, responsible for development
+                            boot device encryption feature and Linux software agents on cloud service
+                            platform.</p>
+                    </p>
+                    <ul>
+                        <li>Implement boot disk encryption feature to prevent boot data leakage on
+                            Windows and variant Linux distributions, including Ubunto, CentOS, RHEL,
+                            AmazonLinux and SUSE.</li>
+                        <li>Design software on major cloud service providers including Amazon EC2,
+                            Microsoft Azure and HP-Cloud.</li>
+                        <li>2013 Q2 Trend Engineer of Quarter.</li>
+                    </ul>
+                </div>
+                <div>
+                     <h3><em>Research Assistant, Part-time</em>,
+
+              <a href="https://www.intel.com/">NTU and Intel Corp</a>
+
+              </h3> <span class="tenure">2011-01 — 2012-06</span>
+                    <p>
+                        <p>
+                            <br>As chief designer of building hybrid model and build up high level hardware
+                            simulation and scalable ASIC analysis.</p>
+                    </p>
+                    <ul>
+                        <li>Implement scalable ASIC with NTRU and TTS cryptography with 25% area reduction.</li>
+                        <li>Determine the optimal degree of parallelism from software simulation.</li>
+                    </ul>
+                </div>
+            </section>
+            <hr>
+            <section id="education">
+                <header> <span class="fa fa-lg fa-mortar-board"></span> 
+                     <h2>education</h2>
+
+                </header>
+                <div>
+                     <h3>National Taiwan University</h3> <span class="tenure">2010-09 — 2012-07</span> <span class="keywords">Foundation of Cryptography, Artificial Intelligence, Parallel and Distribution Computing, </span>
+                </div>
+                <div>
+                     <h3>National Taiwan University</h3> <span class="tenure">2006-09 — 2010-07</span>
+                    <p><em>First Prize</em> in NTUEE Undergraduate Outstanding Project.</p>
+                </div>
+            </section>
+            <hr>
+            <section id="writing">
+                <header> <span class="fa fa-lg fa-pencil"></span> 
+                     <h2>writing</h2>
+
+                </header>
+                <div>
+                     <h3><em><a href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=9202058.PN.&OS=PN/9202058&RS=PN/9202058">[Patent] Root Volume Encryption Mechanism in Para-virtualized Virtual Machine</a></em>,
+
+      
+
+            Trend Micro</h3> <span class="tenure">2015</span>
+                    <p>The present invention is generally related to provide data protection.
+                        More particularly, the present invention is directed to achieve root volume
+                        encryption in a para-virtualized virtual machine.</p>
+                </div>
+                <div>
+                     <h3><em><a href="http://www.airitilibrary.com/Publication/alDetailedMesh?docid=c0000078-201005-201007130127-201007130127-126-132">MIFARE Classic: Practical Attacks and Defenses</a></em>,
+
+      
+
+            Chinese Cryptology and Information Security Association</h3> <span class="tenure">2013</span>
+                    <p>This paper report a experience attacking a real MIFARE Classic system.
+                        We implement a brute-force search using NVIDIA graphics cards to verify
+                        the claims in the literature. This is the first report in the literature
+                        of a practical long-range attack and these attacks disarm all cryptographic
+                        protection of MIFARE Classic. Lastly, we take up the challenge and present
+                        our ideas how to defend against most attacks using practical mechanisms
+                        that do not require any hardware changes.</p>
+                </div>
+                <div>
+                     <h3><em><a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6472114">Securing M2M with Post-quantum Public-key Cryptography</a></em>,
+
+      
+
+            Emerging and Selected Topics in Circuits and Systems / IEEE Journal</h3> <span class="tenure">2013</span>
+                    <p>This paper presents an ASIC implementation of two post-quantum public-key
+                        cryptosystems: NTRU-Encrypt and TTS. It represents a first step toward
+                        securing machine-to-machine systems using strong, hardware-assisted PKC.
+                        In contrast to the conventional wisdom that PKC is too expensive for M2M
+                        sensors, it lowers the total cost of ownership based on cost savings in
+                        provision, deployment, operation, maintenance, and general management.</p>
+                </div>
+                <div>
+                     <h3><em><a href="http://ieeexplore.ieee.org/document/5088976">A practical experience with RFID security</a></em>,
+
+      
+
+            Mobile Data Management: Systems, Services and Middleware, 2009 / IEEE</h3> <span class="tenure">2009</span>
+                    <p>This paper shares the practical experiences with EasyCard security and
+                        provide insights into RFID security.</p>
+                </div>
+            </section>
+            <hr>
+            <section id="recognition">
+                <header> <span class="fa fa-lg fa-trophy"></span> 
+                     <h2>recognition</h2>
+
+                </header>
+                <div>
+                     <h3><em>2013 Q2 Engineer of Quarter</em>, Trend Micro</h3>
+ <span class="tenure">2013</span>
+
+                </div>
+            </section>
+        </main>
+    </body>
+
+</html>
