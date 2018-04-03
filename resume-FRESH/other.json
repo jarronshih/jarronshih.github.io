@@ -88,18 +88,18 @@
   ],
   "recognition": [
     {
+      "title": "Certified ScrumMaster",
+      "from": "Scrum Alliance",
+      "date": "2015-01",
+      "website": "https://github.com/jarronshih/jarronshih.github.io/raw/master/assets/csm_scrum.pdf",
+      "summary": ""
+    },
+    {
       "flavor": "industry",
       "from": "Trend Micro",
       "title": "2013 Q2 Engineer of Quarter",
       "date": "2013-06-01",
       "event": "2013 Q2",
-      "summary": ""
-    },
-    {
-      "title": "Certified ScrumMaster",
-      "from": "Scrum Alliance",
-      "date": "2015-01",
-      "website": "https://github.com/jarronshih/jarronshih.github.io/raw/master/assets/csm_scrum.pdf",
       "summary": ""
     }
   ],
