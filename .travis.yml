@@ -4,6 +4,7 @@ services:
   - docker
 
 before_install:
+  - if echo "$TRAVIS_COMMIT_MESSAGE" | grep -F -q "Deploy jarronshih/jarronshih.github.io" ; then echo "[skip] has been found, exiting" && exit 0 ; else echo "[skip travis] has not been found, continuing" ; fi
   - make build
 
 script:
