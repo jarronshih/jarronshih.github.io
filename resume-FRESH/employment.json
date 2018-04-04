@@ -25,27 +25,14 @@
         "position": "Senior Software Developer",
         "employer": "Trend Micro",
         "summary": "<br>In network defense group, responsible for CI/CD, network traffic parsing and hosting a Sandbox SaaS service.",
-        "start": "2015-10-01",
+        "start": "2015-01-01",
         "end": "2016-12-31",
         "url": "https://www.trendmicro.com/",
         "keywords": [],
         "highlights": [
           "Introduce _CI/CD_ best practice to the product, as the standard of the following project.",
-          "Enhance SaaS service to support multi-tenancy customers sharing resource in the cloud.",
+          "Enhance SaaS service to support multi-tenancy customers sharing resource in the cloud to reduce cost.",
           "Parsing network traffic in packet level, work as _data engineer_ in network analysis product."
-        ]
-      },
-      {
-        "position": "Senior Software Developer",
-        "employer": "Trend Micro",
-        "summary": "<br>In Cloud and Data Center Security Product team, the most profitable products, responsible for SAP virus scan on Windows platform, including Anti-Malware, JavaScript active script scan and Mail scan.",
-        "start": "2015-01-01",
-        "end": "2015-10-01",
-        "url": "https://www.trendmicro.com/",
-        "keywords": [],
-        "highlights": [
-          "Integrate Anti-Malware solution and active script scan solution to prevent _Cross Site Scripting Attack_.",
-          "Develop virus scan interface for SAP on Windows platform to meet the market demand."
         ]
       },
       {
@@ -60,19 +47,6 @@
           "Implement boot disk encryption feature to prevent boot data leakage on Windows and variant Linux distributions, including Ubunto, CentOS, RHEL, AmazonLinux and SUSE.",
           "Design software on major cloud service providers including Amazon EC2, Microsoft Azure and HP-Cloud.",
           "2013 Q2 Trend Engineer of Quarter."
-        ]
-      },
-      {
-        "position": "Research Assistant, Part-time",
-        "employer": "NTU and Intel Corp",
-        "summary": "<br>As chief designer of building hybrid model and build up high level hardware simulation and scalable ASIC analysis.",
-        "start": "2011-01-01",
-        "end": "2012-06-30",
-        "url": "https://www.intel.com/",
-        "keywords": [],
-        "highlights": [
-          "Implement scalable ASIC with NTRU and TTS cryptography with 25% area reduction.",
-          "Determine the optimal degree of parallelism from software simulation."
         ]
       }
     ]

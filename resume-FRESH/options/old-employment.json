@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "format": "FRESH@^1.0.0-beta",
+    "modified": "2018-04-04T05:52:16.562Z"
+  },
+  "employment": {
+    "history": [
+      {
+        "position": "Senior Software Developer",
+        "employer": "Trend Micro",
+        "summary": "<br>In Cloud and Data Center Security Product team, the most profitable products, responsible for SAP virus scan on Windows platform, including Anti-Malware, JavaScript active script scan and Mail scan.",
+        "start": "2015-01-01",
+        "end": "2015-10-01",
+        "url": "https://www.trendmicro.com/",
+        "keywords": [],
+        "highlights": [
+          "Integrate Anti-Malware solution and active script scan solution to prevent _Cross Site Scripting Attack_.",
+          "Develop virus scan interface for SAP on Windows platform to meet the market demand."
+        ]
+      },
+      {
+        "position": "Research Assistant, Part-time",
+        "employer": "NTU and Intel Corp",
+        "summary": "<br>As chief designer of building hybrid model and build up high level hardware simulation and scalable ASIC analysis.",
+        "start": "2011-01-01",
+        "end": "2012-06-30",
+        "url": "https://www.intel.com/",
+        "keywords": [],
+        "highlights": [
+          "Implement scalable ASIC with NTRU and TTS cryptography with 25% area reduction.",
+          "Determine the optimal degree of parallelism from software simulation."
+        ]
+      }
+    ]
+  }
+}
