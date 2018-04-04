@@ -1,5 +1,6 @@
 all:
 	docker run --rm -it -v`pwd`:/src jarron-resume:latest bash -c 'make pdf; make html'
+
 build:
 	docker build -t jarron-resume:latest .
 
