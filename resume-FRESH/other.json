@@ -31,6 +31,7 @@
         "level": "advanced",
         "skills": [
           "AWS,",
+          "ECS,",
           "Kubernetes,",
           "Docker Swarm,",
           "SaaS sytem design,",

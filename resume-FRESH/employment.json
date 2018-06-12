@@ -15,7 +15,8 @@
         "url": "https://www.trendmicro.com/",
         "keywords": [],
         "highlights": [
-          "Design, develop and operate _container-based services_ from company data center to AWS for SaaS.",
+          "As Full Cycle Developers doing design, develop and operate _container-based services_ from company data center to AWS for SaaS.",
+          "Build up operation, monitor alert and dashboard report using automated script from scratch.",
           "Introduce _asynchronous_ on Python to enhance process and I/O usage with 60% improvement.",
           "_Legacy code remodeled_: Python 2 to 3, built up unittest and integration test from scratch (0% to over 90%).",
           "Separate data streaming part from monolithic application to embrace _serviceless framework_."
