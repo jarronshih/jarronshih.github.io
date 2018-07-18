@@ -1,64 +1,6 @@
 Non-tech Question
 =========
 
-### Q: What Do You Want to Do ?
-- your goals and ambitions.
-- indicate you're interesting in doing related job.
-
-```
-Trend US:
-Recently, the growth of smart phone, web and wearable device,
-in the future, internet of things.
-Company and publics are facing more security thread.
-
-I'm hoping to make next generation product with both high security and good usability.
-// Instead of finding trade-off between security and usability.
-```
-
-<!--
-```
-web programmer:
-I want to do web programming so I can show my work to friends and family.
-I'm hoping to do this at a startup like yours where my experience can help company grow.
-```
-
-```
-fb:
-I want to do social software because it impact everyone everyday.
-I'm hoping to join the company that can do cool things, gather large data from whole world and make a big impact, in a good way.
-```
--->
-
-
-
-### Q: What is your Career Goals
-- more long term
-- engineer track (join a high performance and self-management team )
-- environment
-
-```
-In long term, I'll focus my career path on software engineer track.
-I love to make things by my hand and want to contribute to the industry.
-// and cooperate a team that is high performance and self-management.
-
-In medium term, I'll go Sillicon valley.
-Work with top programmer in the world, be closer to the change and adapt to the change.
-```
-
-
-
-### Q: Why looking to change Jobs ?
-to hide weakness using 3 point
-- a change in environment
-- factor out of control
-- a weakness out of control
-```
-I would like to join there and be more closer to the change and closer to the big market.
-
-In Cupertino, there is more creative idea PoC, create new things, EX: boot on AWS.
-```
-
-
 
 ### Q: What is you're favorite Programming Language / OS / Computer ?
 - tech reason, but not to be the person hard to work with
@@ -102,7 +44,7 @@ I can also write JS and recently I'm following the news of ReactJS.
 I'll consider my working style as speed and accuracy.
 I usually find out the walking skeleton first and implement it.
 Then iterative and incremental development.
-// ex: root volume: insert OS -> switch boot -> access to internect -> decrypt -> add key
+// ex: root volume: insert OS -> switch boot -> access to internet -> decrypt -> add key
 
 When collaborate with colleague, we use pair programming to sync our program style and idea.
 It make us more productive and efficency. sync up.
@@ -126,19 +68,19 @@ We also have apply a patent about boot volume encryption on para-virtualiztion p
 
 My second project is Deep Security, it is a server protection product.
 My main contribution is integrate virus scan and active content scan feature with SAP.
-Currently we are preparing for a PoC demo in Augest.
+Currently we are preparing for a PoC demo in August.
 ```
 
 
 
-### Q: bigest achievement and failure
+### Q: biggest achievement and failure
 ```
 Successful boot a encrypt boot on EC2, it is amazing.
 and apply for my first patent.
 
 
 SEG Case that KVM boot crash.
-Cp back, work well. Not on every OS(centos only).
+Cp back, work well. Not on every OS(centOS only).
 Slow, debug not efficient.
 
 Finally, stack overflow on decrypt function.
@@ -147,7 +89,7 @@ Finally, stack overflow on decrypt function.
 ```
 
 
-### Q: Describr your strength and weakness
+### Q: Describe your strength and weakness
 ```
 I consider greatest strength is learning agility.
 For example, in SecureCloud I do the PoC, pick up knowledge, ToI from colleague.
@@ -164,7 +106,7 @@ ask colleague to do pair review to improve it.
 
 ### Q: How your colleague describe you ?
 ```
-high performace.
+high performance.
 easy to cooperate with.
 always working with passions.
 
@@ -177,17 +119,17 @@ Beside the job, we also make up a team to join Trend Device App Contest.
 - postive
 ```
 learn thing fast: new things, creative things is interesting for me,
-according to my experice I not only like it and also good at it. , EX: aws boot volume
+according to my experience I not only like it and also good at it. , EX: aws boot volume
 
 working in speed and accuracy, : PoC, aws boot, sap integration
 
-Basic knowlegdge to security and learn fast.
+Basic knowledge to security and learn fast.
 ```
 
 
 
 ### Q: Do you have any Question?
-- important, dont ask stupit question.
+- important, don't ask stupid question.
 - Demonstrate your interest in the employer.
 ```
 1. I would like to know what project we focus on in US team.

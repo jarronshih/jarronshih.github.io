@@ -2,27 +2,40 @@ Non-tech Question
 ====
 
 ### Q: Tell me about your experience.
-
+```
+Work as a web service. Serve async task. Role based permission and QoS.
+```
 
 
 ### Q: Tell me about your biggest achievement and failure.
+- what sets you apart from other qualified candidates
+  - your value
+```
+Build to CI/CD from scratch. From build machine, unittest, integration test to production deployment. Everything is in code.
 
+Have Root volume encryption and have a patient.
+
+```
+- Are you someone who can learn from failure?
+  - Are you self-aware enough to acknowledge failure and weakness
+```
+
+```
 
 
 ### Q: Describe your strength and weakness.
-- Should pick the three that fit the jib
+- Should pick the three that fit the job.
 ```
-Learner. I love to embrace new things and willing to challenge myself. Try new thing and fix the my step.
+I would like to call myself as a Learner. I love to embrace new things and willing to adopt for better change.
 
 Passion at work. Love to build things and felt the great sense of achievement.
 
-
 ```
-- Should be genuine weakness but not so bad
+- Should be genuine weakness but not so bad.
 ```
 Go too deep in detail and want to get things perfect.
 
-I’m naturally shy at start. But get crazy when use to it.
+I’m naturally shy at beginning.
 ```
 
 
@@ -38,15 +51,16 @@ I am driven to be the best at what I do and I want to work somewhere where I’l
 ```
 
 
-
 ### Q: Do you have any Question?
 - important, don't ask stupid question.
 - Demonstrate your interest in the employer.
 
 ```
 - Can you share more about the day-to-day responsibilities of this position? What's a typical day like?
+
 - If I were hired for this role, what would you want me to achieve in my first months in the position?
   - In your opinion, what is the single most important indicator for success in this job?
+
 - What is the most interesting project you have achieved?
   - What are biggest challenges of this position?
 
