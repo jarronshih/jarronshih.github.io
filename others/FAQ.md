@@ -3,7 +3,9 @@ Non-tech Question
 
 ### Q: Tell me about your experience.
 ```
-Work as a web service. Serve async task. Role based permission and QoS.
+One of my project works as an sample analysis service. We analyzed the Executable file, MS office file, and url with behavior report. My part is on a web service. Serve async task. Role based permission and QoS. We handle the traffic at 10k/hr in avg.
+
+The other early project is about disk encryption. We support root volume encryption and also file a patient.
 ```
 
 
@@ -11,15 +13,19 @@ Work as a web service. Serve async task. Role based permission and QoS.
 - what sets you apart from other qualified candidates
   - your value
 ```
-Build to CI/CD from scratch. From build machine, unittest, integration test to production deployment. Everything is in code.
+Build to CI/CD from scratch. From build machine, unittest, integration test to production deployment. Everything is as code.
+
+Design the architecture: Docker + serverless + high H/A + zero-down time
 
 Have Root volume encryption and have a patient.
-
 ```
+
 - Are you someone who can learn from failure?
   - Are you self-aware enough to acknowledge failure and weakness
 ```
+SEG case?
 
+Permission control?
 ```
 
 
@@ -29,8 +35,8 @@ Have Root volume encryption and have a patient.
 I would like to call myself as a Learner. I love to embrace new things and willing to adopt for better change.
 
 Passion at work. Love to build things and felt the great sense of achievement.
-
 ```
+
 - Should be genuine weakness but not so bad.
 ```
 Go too deep in detail and want to get things perfect.
@@ -54,7 +60,6 @@ I am driven to be the best at what I do and I want to work somewhere where I’l
 ### Q: Do you have any Question?
 - important, don't ask stupid question.
 - Demonstrate your interest in the employer.
-
 ```
 - Can you share more about the day-to-day responsibilities of this position? What's a typical day like?
 
@@ -63,5 +68,4 @@ I am driven to be the best at what I do and I want to work somewhere where I’l
 
 - What is the most interesting project you have achieved?
   - What are biggest challenges of this position?
-
 ```
