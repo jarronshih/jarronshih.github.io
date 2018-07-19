@@ -3,7 +3,7 @@ Non-tech Question
 
 ### Q: Tell me about your experience.
 ```
-One of my project works as an sample analysis service. We analyzed the Executable file, MS office file, and url with behavior report. My part is on a web service. Serve async task. Role based permission and QoS. We handle the traffic at 10k/hr in avg.
+One of my project works as an malware analysis service. Customers submit the Executable file, MS office file, or url and we generate the summary with behavior report. My part of work is focused on web service. We handle the traffic at 10k samples/hr in avg. The server do the authentication and authorization with QoS control. Then it dispatches async tasks and collects the report.
 
 The other early project is about disk encryption. We support root volume encryption and also file a patient.
 ```
