@@ -2,8 +2,10 @@ Non-tech Question
 ====
 
 ### Q: Tell me about your experience.
-
-> One of my project works as an malware analysis service. Customers submit the Executable file, MS office file, or url and we generate the summary with behavior report. My part of work is focused on web service. We handle the traffic at 10k samples/hr in avg. The server do the authentication and authorization with QoS control. Then it dispatches async tasks and collects the report. Move from Data Center to AWS.
+- Describe projects
+  - What's your part of work
+  - What's the value of your work.
+> One of my work is a Software as a Service, we accept the sample from customer and do the analysis. The sample could be Executable file, MS office file, or url. I am the RD of the team and my part of work is focused on backend web application. We handle the traffic at 10k samples/hr in avg. The server do the authentication and authorization with QoS control. Then it dispatches async tasks and collects the report. Recently we move from Data Center to AWS and I turn all the devops task into code, aka. Infrastructure as Code.
 >
 > The other early project is about disk encryption. We support root volume encryption and also file a patient.
 
