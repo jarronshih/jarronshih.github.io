@@ -15,6 +15,17 @@ MUST PREPARE
 > The other early project is about disk encryption. We support root volume encryption and also file a patient.
 
 
+### Q: What do you see yourself in 5 years? What's your career goal?
+- Make yourself a good investment.
+- Should be concrete and achievable.
+
+> [Domain Expert] I would like to be the expert of some tech domain. So everyone thinks about the knowledge would think of me.
+>
+> [Team Lead] Facilitate the team, help the junior developer become senior.
+>
+> [Architect] I would like to take more responsibility on Architect role. Take the business value to engineer work, ..
+
+
 ### Q: Tell me about your biggest achievement and failure.
 - what sets you apart from other qualified candidates
   - your value
@@ -50,33 +61,21 @@ MUST PREPARE
 > Go too deep in detail and want to get things perfect.
 
 
-### Q: What do you see yourself in 5 years?
-- Make yourself a good investment.
-- Should be concrete and achievable.
-
-> My goal right now is to find a position at a company where I can grow and take on new challenges over time.
->
-> Ultimately, I’d like to assume more responsibilities and get involved in product strategy.
->
-> I am driven to be the best at what I do and I want to work somewhere where I’ll have opportunities to develop my skills, take on interesting projects, and work with people I can really learn from.
-
-
-## Company Culture
-
 
 ## Ask Company
 
 ### Q: Do you have any Question?
 - important, don't ask stupid question.
 - Demonstrate your interest in the employer.
+- The question you're asking show how smart your are.
 
 > - Can you share more about the day-to-day responsibilities of this position? What's a typical day like?
 >
-> - What is the short term and long term goal of the site / department?
+> - What is the short-term goal, long-term goal, and roadmap of the site / department / BU?
 >
 > - What is the most interesting project you have achieved?
 >   - What are biggest challenges of this position?
->   - What do you like most after you join the company
+>   - What do you like most after you join the company?
 >
-> - If I were hired for this role, what would you want me to achieve in my first months in the position?
->   - In your opinion, what is the single most important indicator for success in this job?
+> - What do you think about other competitor (ex: gcloud vs aws)
+>   - Do you think k8s is a big chance for google?
