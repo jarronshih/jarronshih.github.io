@@ -15,6 +15,11 @@ MUST PREPARE
 > The other early project is about disk encryption. We support root volume encryption and also file a patient.
 
 
+### Q: Why looking for new opportunity / leaving current office ?
+- Don't say anything bad about current company
+> Current Job is great. But I have been working for too long and looking for change.
+
+
 ### Q: What do you see yourself in 5 years? What's your career goal?
 - Make yourself a good investment.
 - Should be concrete and achievable.
