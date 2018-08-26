@@ -10,9 +10,9 @@
   - MVP model ?
   - traffic / latency / consistency or availability
 - Feature expectations
-- Estimations
+- Estimation
   - QPS (query per second)
-  - machine, default 72GB RAM, 10TB disk
+  - machine, default 72GB / 144GB RAM, 10TB disk
 - Design Goals
   - latency
   - CAP
@@ -55,7 +55,7 @@
 
 
 #### Sharding a Database
-- Feature
+- Features
   - data size
   - data input per day
   - single machine spec, memory, disk
@@ -69,14 +69,14 @@
     - virtual node
 
 #### Highly Available Database (NoSQL like)
-- Feature
+- Features
 - Estimation
 - Design Goals
   - low latency
   - Availability > Consistency
 - Deep Dive
   - sharding
-  - normalized
+  - should we normalized ?
   - Single point of failure
     - master-salve
     - multi-master
@@ -96,7 +96,7 @@
 
 
 #### Highly Consistent Database (SQL like)
-- Feature
+- Features
 - Estimation
 - Design Goals
   - latency: good to have, not necessary
@@ -125,7 +125,7 @@ https://raft.github.io/
 
 ### Web
 #### Design URL Shortener
-- Feature
+- Features
   - Shortening: Take a url and return a much shorter url.
   - Redirection: Take a short url and redirect to the original url.
   - Custom url: Allow the users to pick custom shortened url.
@@ -147,15 +147,154 @@ https://raft.github.io/
   - read flow
   - write flow
 - Deep Dive
-  
+  - How to compute the hash
+    - hash + salt and choose one that is not collision
+  - convert hash to base 62
+  - fault tolerance, use load balance
+  - SQL or noSQL
+    - we don't need join
+    - size is huge
+    - noSQL win
+  - schema
+    - hash -> url
+  - how to do sharding
+- Bonus
+  - enhance read query
+    - redis or memcache
+    - R + W > P
+      - R = 1, W = P
+  - sharding on SQL
+  - down time on SQL DB
+
 
 #### Design Search Typeahead
+- Features
+  - How many candidate should we provide
+  - spell check?
+  - How to choose
+    - frequency
+  - realtime? low latency?
+- Estimation
+  - How many query per day
+    - per second?
+  - How many data should we store?
+- Design
+  - low latency
+  - Availability > Consistency
+- Skeleton of the design
+  - Read: List(string) getTopSuggestions(string currentQuery)
+  - Write: void updateSuggestions(string searchTerm)
+  - data struct
+    - prefix free
+    - trie
+- Deep Dive:
+  - Application layer:
+    - Stateless + load balancer
+  - Database layer:
+    - Trie
+    - Trie on store top 5 result
+    - how to update
+      - update every node on write
+    - Frequent write will effect
+      - Sampling, 1 in 100 or 1 in 1000
+      - offline update, batch update
+    - sharding
+      - don't use a-z
+      - take few prefix and hash it
 
 
 #### Design Messenger
+- Features:
+  - 1:1 conversation
+  - 10B message
+    - reason size of message, 64Kb
+- Estimation
+  - data size
+- Design Goals
+  - low latency
+  - Consistency > Availability
+- Skeleton of the design
+  - sendMessage(senderId, recepientId, messageContent, clientMessageId)
+    - clientMessageId is based on time, so we could know the order
+  - ConversationResult fetchConversation(userId, pageNumber, pageSize, lastUpdatedTimestamp)
+  - MessageResult fetchMessages(userId, pageNumber, pageSize, lastUpdatedTimestamp)
+  - write flow
+  - read flow
+- Deep Dive:
+  - Application layer:
+  - Database layer:
+    - need to join
+    - data is huge
+    - read-write pattern
+      - heavy write
+    - noSQL
+  - Schema
+    - noSQL is denormalized form. Two copy of every message.
+    - userId as rowId, used for sharding
+  - Caching
 
 
 #### Design Twitter
+- Features
+  - post tweet
+  - following
+  - favoriting tweets
+  - Feed: see tweet from other user
+- Estimation
+  - 500 million tweets per day with 100 million daily active users
+  - follower: 200 per user on average
+  - favoriting: 2 on average
+- Design Goals:
+  - low latency
+  - Availability > Consistency
+- Skeleton of the design
+  - data
+    - tweet: content, user, timestamp, number of favorite
+    - user profile
+    - Feed: 20 tweet a time
+  - API
+    - addTweet(userId, tweetContent, timestamp)
+    - followUser(userId, toFollowUserId)
+    - favoriteTweet(userId, tweetId)
+    - getUserFeed(user, pageNumber, pageSize, lastUpdatedTimestamp)
+- Deep Dive
+  - Application layer:
+  - Database layer:
+    - need join
+      - user -> followers relation
+      - tweets -> favorited by users relation
+    - data size
+      - large data
+    - SQL
+  - Schema
+    - Users
+      - Id
+      - ...
+    - Tweet
+      - Id
+      - userId
+      - content
+      - ctime
+    - Follow
+      - follower (userId)
+      - followee
+    - favorite
+      - userId
+      - tweetId
+  - Index
+    - follower_id in `Follow` for follower query
+    - user_id, created_at in `Tweet` for feed
+    - tweet_id in `favorites`
+  - How to sharding
+    - by user
+    - by time
+    - hybrid
+      - by user
+      - cache by time
+  - Corner case
+    - high favorite tweet / follower tweet
+      - need to update
+      - favorited table write freq, lock
 
 
 ## Reference
