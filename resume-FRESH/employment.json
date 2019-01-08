@@ -1,17 +1,28 @@
 {
   "meta": {
     "format": "FRESH@^1.0.0-beta",
-    "modified": "2018-04-02T05:52:16.562Z"
+    "modified": "2019-01-07T00:00:00"
   },
   "employment": {
     "summary": "",
     "history": [
       {
+        "position": "Software Developer",
+        "employer": "Google",
+        "summary": "",
+        "current": true,
+        "start": "2019-01-07",
+        "url": "https://www.trendmicro.com/",
+        "keywords": [],
+        "highlights": [
+        ]
+      },
+      {
         "position": "Staff Software Developer",
         "employer": "Trend Micro",
         "summary": "<br>Design and implement SaaS service running in cloud platform with container orchestration. Targeting for automatically CI/CD and high test coverage.",
-        "current": true,
         "start": "2017-01-01",
+        "end": "2019-01-05",
         "url": "https://www.trendmicro.com/",
         "keywords": [],
         "highlights": [
