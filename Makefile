@@ -16,7 +16,7 @@ pdf:
 
 html:
 	hackmyresume build resume-FRESH/*.json to dist/resume.html --theme positive
-	cp dist/resume.html index.html
+	cp dist/resume.html docs/index.html
 
 text:
 	hackmyresume build resume-FRESH/*.json to dist/resume.txt
