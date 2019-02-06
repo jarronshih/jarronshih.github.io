@@ -16,7 +16,7 @@ pdf:
 
 html:
 	hackmyresume build resume-FRESH/*.json to dist/resume.html --theme positive
-	cp dist/resume.html index.html
+	sed -e '/<head>/r gtag.head' dist/resume.html > index.html
 
 text:
 	hackmyresume build resume-FRESH/*.json to dist/resume.txt
