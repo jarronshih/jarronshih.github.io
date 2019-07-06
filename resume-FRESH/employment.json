@@ -1,20 +1,21 @@
 {
   "meta": {
     "format": "FRESH@^1.0.0-beta",
-    "modified": "2019-01-07T00:00:00"
+    "modified": "2019-07-075T00:00:00"
   },
   "employment": {
     "summary": "",
     "history": [
       {
-        "position": "Software Developer",
+        "position": "Software Engineer",
         "employer": "Google",
-        "summary": "",
+        "summary": "<br>Improve user and partner trust in Google and provide privacy aware infrastructure to serve Google Ads.",
         "current": true,
         "start": "2019-01-07",
         "url": "https://www.google.com/",
         "keywords": [],
         "highlights": [
+          "Privacy aware infrastructure for online serving, offline pipeline, and privacy policy validation."
         ]
       },
       {
