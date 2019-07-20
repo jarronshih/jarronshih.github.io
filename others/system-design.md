@@ -3,6 +3,7 @@
 ## Read
 - https://www.interviewbit.com/courses/system-design/
 - https://github.com/donnemartin/system-design-primer
+- https://github.com/tuliren/grokking-system-design
 
 
 ## Ask
