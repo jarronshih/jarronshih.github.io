@@ -10,12 +10,13 @@
         "position": "Software Engineer",
         "employer": "Google",
         "summary": "<br>Improve user and partner trust in Google and provide privacy aware infrastructure to serve Google Ads.",
-        "current": true,
         "start": "2019-01-07",
+        "end": "2019-09-26",
         "url": "https://www.google.com/",
         "keywords": [],
         "highlights": [
           "Privacy aware infrastructure for online serving, offline pipeline, and privacy policy validation."
+          "Awarded 2 Spot Bonus in 2019Q2 and 2019Q3.",
         ]
       },
       {
@@ -59,7 +60,7 @@
         "highlights": [
           "Implement boot disk encryption feature to prevent boot data leakage on Windows and variant Linux distributions, including Ubunto, CentOS, RHEL, AmazonLinux and SUSE.",
           "Design software on major cloud service providers including Amazon EC2, Microsoft Azure and HP-Cloud.",
-          "2013 Q2 Trend Engineer of Quarter."
+          "Awarded 2013 Q2 Trend Engineer of Quarter."
         ]
       }
     ]
