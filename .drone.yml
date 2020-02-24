@@ -1,0 +1,33 @@
+---
+kind: pipeline
+        
+steps:
+- name: build
+  image: docker:dind
+  volumes:
+    - name: dockersock
+      path: /var/run
+  commands:
+    - sleep 5 # give docker enough time to start
+    - docker build -t resume:latest .
+    - docker run --rm -v`pwd`:/src resume:latest bash -c 'make pdf; make html'
+
+- name: push
+  image: appleboy/drone-git-push
+  settings:
+    branch: master
+    remote: git@github.com:jarronshih/jarronshih.github.io.git
+    force: false
+    commit: true
+
+services:
+  - name: docker
+    image: docker:dind
+    privileged: true
+    volumes:
+    - name: dockersock
+      path: /var/run
+
+volumes:
+  - name: dockersock
+    temp: {}

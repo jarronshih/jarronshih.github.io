@@ -4,8 +4,20 @@
     "modified": "2019-07-075T00:00:00"
   },
   "employment": {
-    "summary": "",
+    "summary": "<br>",
     "history": [
+      {
+        "position": "Senior Software Engineer",
+        "employer": "Roblox",
+        "summary": "",
+        "start": "2019-10-07",
+        "current": true,
+        "url": "https://www.roblox.com/",
+        "keywords": [],
+        "highlights": [
+          ""
+        ]
+      },
       {
         "position": "Software Engineer",
         "employer": "Google",
