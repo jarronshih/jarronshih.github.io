@@ -1,8 +1,15 @@
 ---
 kind: pipeline
+name: default
+
+
+platform:
+  os: linux
+  arch: arm
+
 
 steps:
-- name: restore
+- name: install and build
   image: node:12
   commands:
     - npm install hackmyresume -g
@@ -12,14 +19,14 @@ steps:
     - hackmyresume build resume-FRESH/*.json resume-FRESH/options/writing.min.json to dist/resume.pdf --theme compact
     - hackmyresume build resume-FRESH/*.json to dist/resume.html --theme positive
 
-- name: release pdf and html
+- name: release to gh-pages
   image: node:12
   commands:
   - cp dist/resume.pdf one-page/resume-`date -I`.pdf
   - sed -e '/<head>/r gtag.head' dist/resume.html > index.html
   - sed -i -e "s/[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}/`date -I`/g" pdf.html
   depends_on:
-    - restore
+    - install and build
 
 - name: push
   image: appleboy/drone-git-push
@@ -29,7 +36,7 @@ steps:
     force: false
     commit: true
   depends_on:
-    - release pdf and html
+    - release to gh-pages
 
 trigger:
   branch:

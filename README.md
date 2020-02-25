@@ -1,5 +1,11 @@
 # Jarron's Resume
-This is a resume generated from [HackMyResume](https://github.com/hacksalot/HackMyResume)
+
+[![Build Status](https://cloud.drone.io/api/badges/jarronshih/jarronshih.github.io/status.svg)](https://cloud.drone.io/jarronshih/jarronshih.github.io)
+
+
+This is a resume generated from [HackMyResume](https://github.com/hacksalot/HackMyResume). 
+By maintaining one source of `json` file, the program auto generate and publish `pdf` and `html` version.
+Use DroneCI to build and release.
 
 
 ## Build
@@ -12,7 +18,3 @@ make dev
 make pdf
 make html
 ```
-
-## Ref
-- http://get.ftqq.com/744.get
-  - https://github.com/geekcompany/ResumeSample
