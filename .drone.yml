@@ -1,16 +1,25 @@
 ---
 kind: pipeline
-        
+
 steps:
-- name: build
-  image: docker:dind
-  volumes:
-    - name: dockersock
-      path: /var/run
+- name: restore
+  image: node:12
   commands:
-    - sleep 5 # give docker enough time to start
-    - docker build -t resume:latest .
-    - docker run --rm -v`pwd`:/src resume:latest bash -c 'make pdf; make html'
+    - npm install hackmyresume -g
+    - wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.4/wkhtmltox-0.12.4_linux-generic-amd64.tar.xz
+    - tar xvf wkhtmltox-0.12.4_linux-generic-amd64.tar.xz
+    - export PATH="`pwd`/wkhtmltox/bin:/usr/local/bin/"
+    - hackmyresume build resume-FRESH/*.json resume-FRESH/options/writing.min.json to dist/resume.pdf --theme compact
+    - hackmyresume build resume-FRESH/*.json to dist/resume.html --theme positive
+
+- name: release pdf and html
+  image: node:12
+  commands:
+  - cp dist/resume.pdf one-page/resume-`date -I`.pdf
+  - sed -e '/<head>/r gtag.head' dist/resume.html > index.html
+  - sed -i -e "s/[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}/`date -I`/g" pdf.html
+  depends_on:
+    - restore
 
 - name: push
   image: appleboy/drone-git-push
@@ -19,15 +28,9 @@ steps:
     remote: git@github.com:jarronshih/jarronshih.github.io.git
     force: false
     commit: true
+  depends_on:
+    - release pdf and html
 
-services:
-  - name: docker
-    image: docker:dind
-    privileged: true
-    volumes:
-    - name: dockersock
-      path: /var/run
-
-volumes:
-  - name: dockersock
-    temp: {}
+trigger:
+  branch:
+  - master
