@@ -27,13 +27,12 @@ steps:
 - name: push
   image: appleboy/drone-git-push
   settings:
-    branch: master
     remote: git@github.com:jarronshih/jarronshih.github.io.git
-    force: false
     commit: true
-    commit_message: "[CI SKIP] push pdf and html."
-    ssh_key:
-      from_secret: github_ssh_key
+    commit_message: "[skip ci] push pdf and html."
+  environment:
+    GIT_PUSH_SSH_KEY:
+      from_secret: ssh_key
   depends_on:
     - release to gh-pages
 
