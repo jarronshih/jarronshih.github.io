@@ -31,6 +31,9 @@ steps:
     remote: git@github.com:jarronshih/jarronshih.github.io.git
     force: false
     commit: true
+    commit_message: "[CI SKIP] push pdf and html."
+    ssh_key:
+      from_secret: github_ssh_key
   depends_on:
     - release to gh-pages
 
