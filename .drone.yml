@@ -27,7 +27,8 @@ steps:
 - name: push
   image: appleboy/drone-git-push
   settings:
-    remote: git@github.com:jarronshih/jarronshih.github.io.git
+    remote_name: origin
+    branch: ${DRONE_BRANCH}
     commit: true
     commit_message: "[skip ci] push pdf and html."
   environment:
