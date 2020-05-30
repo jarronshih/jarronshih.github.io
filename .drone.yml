@@ -3,6 +3,13 @@ kind: pipeline
 type: docker
 name: default
 
+platform:
+  os: linux
+  arch: arm64
+
+trigger:
+  branch:
+  - master
 
 steps:
 - name: install and build
@@ -18,7 +25,7 @@ steps:
 - name: release to gh-pages
   image: node:12
   commands:
-  - cp dist/resume.pdf one-page/resume-`date -I`.pdf
+  - cp -f dist/resume.pdf one-page/resume-`date -I`.pdf || true
   - sed -e '/<head>/r gtag.head' dist/resume.html > index.html
   - sed -i -e "s/[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}/`date -I`/g" pdf.html
   depends_on:
@@ -35,7 +42,3 @@ steps:
       from_secret: ssh_key
   depends_on:
     - release to gh-pages
-
-trigger:
-  branch:
-  - master
