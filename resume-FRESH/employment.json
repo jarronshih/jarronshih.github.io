@@ -9,13 +9,15 @@
       {
         "position": "Senior Software Engineer",
         "employer": "Roblox",
-        "summary": "",
+        "summary": "<br>As webcore team, we build main site, API layers, and internal service to support our core business.",
         "start": "2019-10-07",
         "current": true,
         "url": "https://www.roblox.com/",
         "keywords": [],
         "highlights": [
-          ""
+          "Lead the team of privacy infrastructure to be compliance with GDPR.",
+          "Decompose monolithic service to high scalability serverless architecture.",
+          "Build large scale distributed system with caching and sharding."
         ]
       },
       {
